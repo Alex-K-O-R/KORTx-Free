@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/KORTx/core/jquery-3.6.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+<script type="text/javascript" src="../js/jquery-ui.js" defer></script>
+
+<script type="text/javascript" src="../js/KORTx/core/KORTx.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KChain.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KAddableBlock.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KFormFiller.css" />
+
+<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/Main.css" />
+</head>
+<body>
+
+
+<div id="demo-form_tabs">
+    <ul class="ui secondary pointing menu light-menu">
+        <li class="light-tab item active">
+            <a href="#demo-form_tabs-1" class="light-tab-link">
+                KChain
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-2" class="light-tab-link">
+                KAddable
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-3" class="light-tab-link">
+                KFormFiller
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-4" class="light-tab-link">
+                KFollower
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-5" class="light-tab-link">
+                KCookies
+            </a>
+        </li>
+    </ul>
+    <div id="demo-form_tabs-1">
+        <div class="row">
+            <div id="animation_area">
+            <div class="animation_chain" data-item="1" data-otem="1"></div>
+            <div class="animation_chain" data-item="1"></div>
+            <div class="animation_chain"></div>
+            <div class="animation_chain" data-otem="1"></div>
+            <div class="animation_chain"></div>
+            </div>
+
+            <button id="animation_test" class="action_btn">Do that.</button>
+        </div>
+    </div>
+
+    <div id="demo-form_tabs-2" style="display: none;">
+        <div class="row">
+            <form id="addable-block">
+                <div>
+                    <div class="add-area">
+                        <div class="addable element">
+                            <label>
+                                <input type="checkbox" value="" name="top-{i}">
+                                Открывать в новом окне
+                            </label>
+                            <input type="text" value="" name="string-{i}" placeholder="Текст ссылки">
+                            <input type="url" value="" name="url-{i}" placeholder="Описание">
+                            <span class="delete-minus button" title="Удалить поле">[-]</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="add-plus button" title="Добавить поле">[+]</span>
+                    </div>
+                </div>
+                <button type="submit" class="action_btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="demo-form_tabs-3" style="display: none;">
+        <div class="row">
+            <code>
+                var data = [{
+                            ".text span": JSON.stringify("Icon 1")
+                            , "img": JSON.stringify("data:image/png;base64,iVBORw...uQmCC")
+                            , ".text input": JSON.stringify("Some person.")
+                            }<br/>
+                            , {
+                            ".text span": JSON.stringify("Icon 2")
+                            , ".pic img": JSON.stringify("data:image/png;base64,iVBORw...kSuQmCC")
+                            , "someinput": JSON.stringify("It's him!")
+                            }];
+            </code>
+            <div class="icon">
+                <div class="pic">
+                    <img>
+                </div>
+                <div class="text">
+                    <span>Nothing</span><br/>
+                    <input type="text" name="someinput" value="Also nothing"/>
+                </div>
+            </div>
+            <br/><br/><br/>
+            <button type="button" class="fill_data1">Get 1st element of [data]</button>
+            <button type="button" class="fill_data2">Get 2nd element of [data]</button>
+        </div>
+    </div>
+
+    <div id="demo-form_tabs-4" style="display: none;">
+        <div class="row">
+            <div class="gr_follow1">
+                <input type="text" value="" name="follow1" placeholder="Type in 'Hi.'"><br/>
+                <input type="text" value="" name="following1" class="follower-follow1">
+            </div>
+            <br/><br/><br/>
+            <div class="gr_follow2">
+                <input type="text" value="" name="follow2" placeholder="Type in 'Wow!'"><br/>
+                <input type="text" value="" name="following2" class="follower-follow2"><br/>
+                <input type="text" value="" name="following3" class="follower-follow2">
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-form_tabs-5" style="display: none;">
+        <div class="row">
+            <select id="cookie_demo">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <button type="button" class="action_btn">Save in cookies</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    window.onload = function(){
+    // KChain demo:
+        var area = document.getElementById("animation_area");
+        var elmnts = document.getElementsByClassName("animation_chain");
+        var slides = new KORTx.KChain.ChainParams(
+                [500, 2500]
+                , function(div){
+                    var randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
+                    div.style.backgroundColor = randomColor;
+                    div.style.display='inline-block';
+                    div.classList.add('alarm-on');
+                }
+                , elmnts
+                , true
+        );
+
+
+        var animation = new KORTx.KChain.Chain(slides);
+
+        animation.Finalize(function(elements){
+            $('#animation_area').next('button').text('Do that again!');
+            area.style.backgroundColor="mediumspringgreen";
+        });
+
+        $('#animation_test').click(function(){animation.Rewind(function(){area.style.background='none';}); animation.Start();});
+
+
+        // KAddable demo.
+        $('#addable-block').on('submit', function(){
+            var arr = $(this).serializeArray();
+            console.log(arr);
+            alert('Form values were serialized and are available in console.');
+            return false;
+        });
+
+        var links_array = new KORTx.KAddable('addable'
+                ,[]
+                ,'#addable-block .add-plus.button'
+        );
+
+
+
+        // KFillForm demo.
+        var data = [
+            {
+                ".text span": JSON.stringify("Icon 1")
+                , ".pic img": JSON.stringify("data:image/png;base64,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")
+                , "someinput": JSON.stringify("Some person.")
+            }
+           ,{
+                ".text span": JSON.stringify("Icon 2")
+                , ".pic img": JSON.stringify("data:image/png;base64,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")
+                , "someinput": JSON.stringify("It's him!")
+            }
+       ];
+
+        new KORTx.Us.KFormFiller('div.icon', data[0], 'button.fill_data1');
+        new KORTx.Us.KFormFiller('div.icon', data[1], 'button.fill_data2');
+
+
+
+        // KFollower demo.
+        var gr1 = new KORTx.KFollowers('.gr_follow1');
+        var gr2 = new KORTx.KFollowers('.gr_follow2');
+
+
+
+        // KCookie demo.
+        $('#cookie_demo').next('button').click(
+            function(e){
+                $(e.target).text('Saved!');
+                KORTx.KCookies.Set('last-value', $('#cookie_demo').val(), 1);
+            }
+        );
+
+        $('#cookie_demo').val(KORTx.KCookies.Get('last-value')).change();
+
+
+
+
+        // Tabs part
+        $( "#demo-form_tabs" ).tabs({
+            active: (KORTx.KCookies.Get('last-selected-tab')===null)?0:KORTx.KCookies.Get('last-selected-tab')
+            , activate: function( event, ui ) {
+                if(window.location.origin.indexOf('file://')!==0) KORTx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
+            }
+        });
+
+    }
+</script>
+
+</body>
+</html>

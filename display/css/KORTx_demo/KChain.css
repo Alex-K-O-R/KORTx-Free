@@ -1,0 +1,35 @@
+#animation_area {
+  display: flex;
+}
+
+div.animation_chain {
+    left: 25px;
+    top: 25px;
+    width: 22px;
+    height: 22px;
+    display: none;
+    font-size: 60%;
+}
+
+.alarm-on {
+    animation: alarm 1s alternate-reverse;
+    animation-iteration-count: 1;
+}
+
+@keyframes alarm {
+    0% {
+        transition: opacity.2s linear;
+        transition-delay: 0s;
+        opacity: 1;
+    }
+
+    100% {
+        transition: opacity .2s linear;
+        transition-property: background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+        display: inline-block;
+        opacity: 0;
+    }
+}

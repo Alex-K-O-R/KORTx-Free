@@ -1,0 +1,12 @@
+#demo-form_tabs .ui-tabs-active.ui-state-active {
+    border-bottom: 2px solid deepskyblue;
+}
+.action_btn {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+}
+div.row{
+    position: relative;
+    margin: 1.5em 0 0 2em;
+}

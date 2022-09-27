@@ -1,0 +1,19 @@
+div.icon {
+    margin: 2em 0 0 0;
+}
+
+div.icon .pic {
+    display: inline-block;
+    border: 1px solid yellowgreen;
+    float: left;
+    margin-right: 6px;
+}
+
+div.icon .pic, div.icon .pic img {
+    width: 40px;
+    height: 40px;
+}
+
+div.icon .text {
+
+}

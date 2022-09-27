@@ -1,0 +1,28 @@
+#addable-block {
+    margin-top: 1em;
+}
+
+#addable-block .element {
+    padding-left: 1em;
+    margin-bottom: 0.3em;
+}
+
+#addable-block .element label {
+    margin-right: 1em;
+}
+
+#addable-block .button {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#addable-block .delete-minus {
+    color: red;
+    margin-left: 0.3em;;
+}
+
+#addable-block .add-plus {
+    display: inline-block;
+    color: blue;
+    margin: 0.5em 0 0 1.1em;
+}
