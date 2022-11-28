@@ -6,18 +6,20 @@ function LoadJSLibrary(filePath){
     document.head.append(script);
 }
 if (typeof window.$ === 'undefined')  {
-    LoadJSLibrary('../js/KORTx/core/jquery-3.6.1.min.js');
+    LoadJSLibrary('../js/KORtx/core/jquery-3.6.1.min.js');
 }
 
-LoadJSLibrary('../js/KORTx/utility/Functions.js');
-LoadJSLibrary('../js/KORTx/utility/Procedures.js');
-LoadJSLibrary('../js/KORTx/nodes/KChain.js');
+LoadJSLibrary('../js/KORtx/utilities/Functions.js');
+LoadJSLibrary('../js/KORtx/utilities/Procedures.js');
+LoadJSLibrary('../js/KORtx/nodes/KChain.js');
 
-LoadJSLibrary('../js/KORTx/nodes/KAddableBlock.js');
-LoadJSLibrary('../js/KORTx/nodes/KFollower-min.js');
-LoadJSLibrary('../js/KORTx/nodes/KCookies.js');
+LoadJSLibrary('../js/KORtx/nodes/KAddableBlock.js');
+LoadJSLibrary('../js/KORtx/nodes/KFollower-min.js');
+LoadJSLibrary('../js/KORtx/nodes/KCookies.js');
 
-KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
+LoadJSLibrary('../js/KORtx/nodes/KShowPassword.js');
+
+KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
     Node: class {
         constructor(){
             this.group;

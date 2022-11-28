@@ -1,4 +1,4 @@
-KORTx.Us = Object.assign((typeof KORTx !== 'undefined' && typeof KORTx.Us !== 'undefined')?KORTx.Us:{},{
+KORtx.Us = Object.assign((typeof KORtx !== 'undefined' && typeof KORtx.Us !== 'undefined')?KORtx.Us:{},{
     /*
      KFormFiller is a utility method that helps to distribute values across form elements or HTML blocks
      by key to class or name attribute match.

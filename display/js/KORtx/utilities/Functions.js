@@ -1,5 +1,5 @@
-KORTx.Us = Object.assign((typeof KORTx !== 'undefined' && typeof KORTx.Us !== 'undefined')?KORTx.Us:{},{
-//KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{},{
+KORtx.Us = Object.assign((typeof KORtx !== 'undefined' && typeof KORtx.Us !== 'undefined')?KORtx.Us:{},{
+//KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{},{
 //    Us: {
         HtmTgs: {
             getDataAttributes : function(node) {
@@ -36,7 +36,7 @@ KORTx.Us = Object.assign((typeof KORTx !== 'undefined' && typeof KORTx.Us !== 'u
                 return true;
             }
             , Cxs : function(obj){
-                if(KORTx.Cdf(obj)){
+                if(KORtx.Cdf(obj)){
                     if(Array.isArray(obj) && obj.length>0) {return true;}
 
                     if(obj !== null) {return true;}

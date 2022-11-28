@@ -1,4 +1,4 @@
-KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
+KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
 /*
     KChain is a handy tool that provides a nice and easy animation chain describer for group of elements.
 
@@ -45,7 +45,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
                 var REIS = this.rootElementsInitialStates;
 
                 for(var i=0; i<chainParams.elements.length; i++){
-                    REIS[i] = new KORTx.KChain.ElementStateContainer(chainParams.elements[i]);
+                    REIS[i] = new KORtx.KChain.ElementStateContainer(chainParams.elements[i]);
                     this.totalDuration = this.totalDuration + parseInt(chainParams.timeouts[stepTO]);
                     stepTO++;
                     if (stepTO >= chainParams.timeouts.length) stepTO = 0;
@@ -105,7 +105,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
                     function(){
                         This.ClearTOs();
                         clearTimeout(TOFinal);
-                        if(KORTx.Us.Glbl.Cdf(This.finalFunc)){This.finalFunc();}
+                        if(KORtx.Us.Glbl.Cdf(This.finalFunc)){This.finalFunc();}
                         This.started = false;
                     }, TOtotal+200);
                 This.started = true;
@@ -115,7 +115,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
             Finalize = function(finalFunction){
                 var This = this;
 
-                if(KORTx.Us.Glbl.Cdf(finalFunction)){
+                if(KORtx.Us.Glbl.Cdf(finalFunction)){
                     This.finalFunc = function(){return finalFunction(This.chainParams.elements);};
                 }
                 return this;
@@ -134,7 +134,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
                     REIS[i].ApplyToElement(e);
                 });
 
-                if(KORTx.Us.Glbl.Cdf(rewAdditionalsFunc)){rewAdditionalsFunc();}
+                if(KORtx.Us.Glbl.Cdf(rewAdditionalsFunc)){rewAdditionalsFunc();}
                 return this;
             }
         }
@@ -145,10 +145,10 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
             dataAttrs = [];
 
             constructor(elem){
-                if(!KORTx.Us.Glbl.Cdf(elem)){return;}
+                if(!KORtx.Us.Glbl.Cdf(elem)){return;}
                 this.cssText = elem.style.cssText;
                 this.cssClasses = elem.className;
-                this.dataAttrs = KORTx.Us.HtmTgs.getDataAttributes(elem);
+                this.dataAttrs = KORtx.Us.HtmTgs.getDataAttributes(elem);
             }
 
             ApplyToElement = function(elem){

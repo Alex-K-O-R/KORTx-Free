@@ -1,4 +1,4 @@
-KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
+KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
     KCookies : {
         Set:function(c_name,value,expirationDays)
         {

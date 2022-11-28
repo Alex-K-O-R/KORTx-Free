@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="../js/KORTx/core/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../js/KORtx/core/jquery-3.6.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
 <script type="text/javascript" src="../js/jquery-ui.js" defer></script>
 
-<script type="text/javascript" src="../js/KORTx/core/KORTx.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KChain.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KAddableBlock.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/KFormFiller.css" />
+<script type="text/javascript" src="../js/KORtx/core/KORtx.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../css/KORTx_demo/Main.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/Main.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KChain.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KAddableBlock.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KFormFiller.css" />
+<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KShowPassword.css" />
 </head>
 <body>
 
@@ -40,6 +41,11 @@
         <li class="light-tab item">
             <a href="#demo-form_tabs-5" class="light-tab-link">
                 KCookies
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-6" class="light-tab-link">
+                KShowPassword
             </a>
         </li>
     </ul>
@@ -139,16 +145,56 @@
             <button type="button" class="action_btn">Save in cookies</button>
         </div>
     </div>
+
+    <div id="demo-form_tabs-6" style="display: none;">
+        <div class="row ksp-demo">
+            <div>Works inside common parent:</div>
+            <div class="parent-mark">
+                <input type="password" name="password" placeholder="Password" value="12345678">
+                <i class="ksp-icons case-first">
+                    <svg class="hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="19.999" height="19.999" viewBox="0 0 14 14">
+                        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACClBMVEUAAADJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJyckAAABNfZ5mAAAArHRSTlMAFU94ThQSV6icPgYykc2GICFDOiYOBTyiwHMTA0qXraaJXTERCGLQYRA0jbTM2tKvbioCBMYZNlh1qev91Io5Cix26EIHL9jKK3mymZ68QDeOvpium1trhF+Mk7q4Xjh7Z0HsJXSWO5rCx1R9bAx+FlAuyZK2b9H2VXqzImOxoFMeRaRlPZDn2Sgbn7lWHz/pSR1N+LsXAcXh3LeLy9+hHEd8sMGBUVlaUpSdlF5VaAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAFxEAABcRAcom8z8AAAFiSURBVBjTY2BkYmZhZUADbOwcnFzogtw8vHz8AgwMglxCwiKiMFExcQlJKWkZWTl5BUUlZRWoqKqaurqGppa2jq6evoGhkTFIzESEWW+NKZOZuYWllbWNrZ29A1DM0UnH1tpZwkVVxtWN193Zg9dFlMHTy9vHx1fCz8cfqCsgkIMzKFiWwTIkNMwp3J9fV0KZgcEhPCIySieaISY2Lj4hUTTJNDkqhcEkNY0pPSOTISs2Oz4nN0+EY01yfoFYblphUXQxQ0kpv6xTmZlKbnmFeiKbeVhlVbUVQ1KUgZ1vtItJTW1UXX1DI2tTs1ULg0NrW3F7R3Qnt0NXYXdPnINgbW8f0MZ+n/Y1E0omTjKbrDNlapPDNLbpoCCJ558xc9bskjkKc+fNm99qDPG88YKFixabZs1YIrG0Pqs7ACrK4Noovmz5ipUBAuaryuc4iiEC1hisgmt1T/gC9DDXZPKREgEAsolad4nv9EgAAAAASUVORK5CYII=" width="14" height="14"/>
+                    </svg>
+                    <svg class="show" style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="19.999" height="12.856" viewBox="0 0 14 9">
+                        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAMAAACejr5sAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlVBMVEUAAADJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJyckAAACAQKT1AAAAhXRSTlMAByRVkL/OzdLPulgmBEGCudzivKvY+fPZt4VDBRFLoOzvrW99xPbnzKJNEg6wu57Adv78spa4XA9iW6mA/aRQXa7BCTihx+CxMwZe1K8qlfebJ6xoY+bkZbRawxgWd8v1emDCcR9pymwlHm2+XxCnnEJGT5lUE0SKqI9+jClhmLO2ZCsIJevwOAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAFxEAABcRAcom8z8AAAECSURBVBjTY2BgYGBkYmZhZWPn4ORi4eZhZAADXj5+AUEhYRFRMXEJSSlpGZCYrJw8u4KikrKKqlprq7qGppY2A4MOt66evq6BsiGbuFGrsYmpmYm5BQO3iJmllam1jbVta2urmJ29g6SjOYOuk6Wzi6uGm3srCHh4enkbmDD4+PoxMPkHgIVabQODGHiCfRhMnEK8vELDIILhEc4yoayRDFHB0aExsXHxCa2tamyJMbFJyb7eDDpRetEpqUxpSunpvhmZWdlOObl5DAza9vmqBd6FRcXFRdIOJdHWpWUg18uUV/hWVlUnJqpUVerWFEH9yVhbV99g1tgo2VDS1NwCFAAAeRdAHNlS8/cAAAAASUVORK5CYII=" width="14" height="9"/>
+                    </svg>
+                </i>
+            </div>
+            <br/><br/>
+            <div>And separately:</div>
+            <div class="parent-mark">
+                <i class="ksp-icons case-second">
+                    <svg class="hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="19.999" height="19.999" viewBox="0 0 14 14">
+                        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACClBMVEUAAADJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJyckAAABNfZ5mAAAArHRSTlMAFU94ThQSV6icPgYykc2GICFDOiYOBTyiwHMTA0qXraaJXTERCGLQYRA0jbTM2tKvbioCBMYZNlh1qev91Io5Cix26EIHL9jKK3mymZ68QDeOvpium1trhF+Mk7q4Xjh7Z0HsJXSWO5rCx1R9bAx+FlAuyZK2b9H2VXqzImOxoFMeRaRlPZDn2Sgbn7lWHz/pSR1N+LsXAcXh3LeLy9+hHEd8sMGBUVlaUpSdlF5VaAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAFxEAABcRAcom8z8AAAFiSURBVBjTY2BkYmZhZUADbOwcnFzogtw8vHz8AgwMglxCwiKiMFExcQlJKWkZWTl5BUUlZRWoqKqaurqGppa2jq6evoGhkTFIzESEWW+NKZOZuYWllbWNrZ29A1DM0UnH1tpZwkVVxtWN193Zg9dFlMHTy9vHx1fCz8cfqCsgkIMzKFiWwTIkNMwp3J9fV0KZgcEhPCIySieaISY2Lj4hUTTJNDkqhcEkNY0pPSOTISs2Oz4nN0+EY01yfoFYblphUXQxQ0kpv6xTmZlKbnmFeiKbeVhlVbUVQ1KUgZ1vtItJTW1UXX1DI2tTs1ULg0NrW3F7R3Qnt0NXYXdPnINgbW8f0MZ+n/Y1E0omTjKbrDNlapPDNLbpoCCJ558xc9bskjkKc+fNm99qDPG88YKFixabZs1YIrG0Pqs7ACrK4Noovmz5ipUBAuaryuc4iiEC1hisgmt1T/gC9DDXZPKREgEAsolad4nv9EgAAAAASUVORK5CYII=" width="14" height="14"/>
+                    </svg>
+                    <svg class="show" style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="19.999" height="12.856" viewBox="0 0 14 9">
+                        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAMAAACejr5sAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlVBMVEUAAADJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJyckAAACAQKT1AAAAhXRSTlMAByRVkL/OzdLPulgmBEGCudzivKvY+fPZt4VDBRFLoOzvrW99xPbnzKJNEg6wu57Adv78spa4XA9iW6mA/aRQXa7BCTihx+CxMwZe1K8qlfebJ6xoY+bkZbRawxgWd8v1emDCcR9pymwlHm2+XxCnnEJGT5lUE0SKqI9+jClhmLO2ZCsIJevwOAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAFxEAABcRAcom8z8AAAECSURBVBjTY2BgYGBkYmZhZWPn4ORi4eZhZAADXj5+AUEhYRFRMXEJSSlpGZCYrJw8u4KikrKKqlprq7qGppY2A4MOt66evq6BsiGbuFGrsYmpmYm5BQO3iJmllam1jbVta2urmJ29g6SjOYOuk6Wzi6uGm3srCHh4enkbmDD4+PoxMPkHgIVabQODGHiCfRhMnEK8vELDIILhEc4yoayRDFHB0aExsXHxCa2tamyJMbFJyb7eDDpRetEpqUxpSunpvhmZWdlOObl5DAza9vmqBd6FRcXFRdIOJdHWpWUg18uUV/hWVlUnJqpUVerWFEH9yVhbV99g1tgo2VDS1NwCFAAAeRdAHNlS8/cAAAAASUVORK5CYII=" width="14" height="9"/>
+                    </svg>
+                </i>
+            </div>
+            <div class="parent-mark">
+                <br/>
+            </div>
+            <div class="parent-mark">
+                <br/>
+                <div>div</div>
+                <p>p</p>
+                <p>p with password field in span:<br/>
+                    <span class="target-second"><input type="password" name="password2" placeholder="Another password" value="ABCDEFGH"></span>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
 <script type="text/javascript">
-    window.onload = function(){
+    $(document).ready(function(){
     // KChain demo:
         var area = document.getElementById("animation_area");
         var elmnts = document.getElementsByClassName("animation_chain");
-        var slides = new KORTx.KChain.ChainParams(
+        var slides = new KORtx.KChain.ChainParams(
                 [500, 2500]
                 , function(div){
                     var randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
@@ -161,7 +207,7 @@
         );
 
 
-        var animation = new KORTx.KChain.Chain(slides);
+        var animation = new KORtx.KChain.Chain(slides);
 
         animation.Finalize(function(elements){
             $('#animation_area').next('button').text('Do that again!');
@@ -179,7 +225,7 @@
             return false;
         });
 
-        var links_array = new KORTx.KAddable('addable'
+        var links_array = new KORtx.KAddable('addable'
                 ,[]
                 ,'#addable-block .add-plus.button'
         );
@@ -200,14 +246,14 @@
             }
        ];
 
-        new KORTx.Us.KFormFiller('div.icon', data[0], 'button.fill_data1');
-        new KORTx.Us.KFormFiller('div.icon', data[1], 'button.fill_data2');
-
+        new KORtx.Us.KFormFiller('div.icon', data[0], 'button.fill_data1');
+        new KORtx.Us.KFormFiller('div.icon', data[1], 'button.fill_data2');
+	
 
 
         // KFollower demo.
-        var gr1 = new KORTx.KFollowers('.gr_follow1');
-        var gr2 = new KORTx.KFollowers('.gr_follow2');
+        var gr1 = new KORtx.KFollowers('.gr_follow1');
+        var gr2 = new KORtx.KFollowers('.gr_follow2');
 
 
 
@@ -215,24 +261,28 @@
         $('#cookie_demo').next('button').click(
             function(e){
                 $(e.target).text('Saved!');
-                KORTx.KCookies.Set('last-value', $('#cookie_demo').val(), 1);
+                KORtx.KCookies.Set('last-value', $('#cookie_demo').val(), 1);
             }
         );
 
-        $('#cookie_demo').val(KORTx.KCookies.Get('last-value')).change();
+        $('#cookie_demo').val(KORtx.KCookies.Get('last-value')).change();
 
 
+
+        //KShowPassword
+        new KORtx.KShowPassword('.case-first');
+        new KORtx.KShowPassword('.case-second', '.target-second > input');
 
 
         // Tabs part
         $( "#demo-form_tabs" ).tabs({
-            active: (KORTx.KCookies.Get('last-selected-tab')===null)?0:KORTx.KCookies.Get('last-selected-tab')
+            active: (KORtx.KCookies.Get('last-selected-tab')===null)?0:KORtx.KCookies.Get('last-selected-tab')
             , activate: function( event, ui ) {
-                if(window.location.origin.indexOf('file://')!==0) KORTx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
+                if(window.location.origin.indexOf('file://')!==0) KORtx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
             }
         });
 
-    }
+    });
 </script>
 
 </body>

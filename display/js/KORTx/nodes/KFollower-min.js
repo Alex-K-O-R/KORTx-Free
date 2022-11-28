@@ -2,7 +2,7 @@
     KFollower is a service that provides type repeat for group of inputs placed in area with [ scn ] (Scene) selector.
     Elements with class follower-[name_of_input] will repeat master's content symultaneously.
  */
-KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
+KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
     KFollowers : function (scn){
         if(typeof scn==='undefined'){
             return;

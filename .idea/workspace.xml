@@ -6,8 +6,8 @@
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/display/js/editors/AddableBlock.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1662236021650" ignored="false" />
     <file path="/KORTx.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664223180929" ignored="false" />
-    <file path="/test - variant.html" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233947977" ignored="false" />
-    <file path="/a.dummy" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233018913" ignored="false" />
+    <file path="/test - variant.html" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669119923697" ignored="false" />
+    <file path="/a.dummy" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121698103" ignored="false" />
     <file path="/Primitive.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664109150777" ignored="false" />
     <file path="/Functions.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664141819140" ignored="false" />
     <file path="/Procedures.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664232955873" ignored="false" />
@@ -25,6 +25,18 @@
     <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/illusions_of_eternity/debug.log" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664232549958" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233015800" ignored="false" />
     <file path="/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233014081" ignored="false" />
+    <file path="/KShowPassword.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669119646676" ignored="false" />
+    <file path="/KShowPassword.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669118598695" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/general/themes/common.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669122444515" ignored="false" />
+    <file path="/common.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669120580765" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/pages/users/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121479764" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/pages/login/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121638768" ignored="false" />
+    <file path="/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121630270" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/pages/login/register/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121658362" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/css/frame.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121793086" ignored="false" />
+    <file path="/frame.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121793086" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121861787" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Bee/display/general/footer.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669122185346" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +70,7 @@
           </favorite_root>
           <favorite_root url="file://$PROJECT_DIR$/.idea/encodings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
           <favorite_root url="file://$PROJECT_DIR$/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/.idea/KorTX Free.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/KORtx Free.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
           <favorite_root url="file://$PROJECT_DIR$/.idea/codeStyleSettings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
         </favorite_root>
         <favorite_root url="file://$PROJECT_DIR$/display" module="KorTX Free" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
@@ -108,9 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/display/js/AddableBlock.js" />
-        <option value="$PROJECT_DIR$/display/js/KORTx/utility/Utilities.js" />
-        <option value="$PROJECT_DIR$/display/js/KORTx/utility/Primitive.js" />
         <option value="$PROJECT_DIR$/display/css/KORTx_demo/KChain.css" />
         <option value="$PROJECT_DIR$/display/js/KORTx/nodes/KChain.js" />
         <option value="$PROJECT_DIR$/display/js/KORTx/utility/Functions.js" />
@@ -123,6 +132,9 @@
         <option value="$PROJECT_DIR$/display/js/KORTx/nodes/KAddableBlock.js" />
         <option value="$PROJECT_DIR$/display/css/KORTx_demo/KFormFiller.css" />
         <option value="$PROJECT_DIR$/display/js/KORTx/utility/Procedures.js" />
+        <option value="$PROJECT_DIR$/display/js/KORtx/core/KORtx.js" />
+        <option value="$PROJECT_DIR$/display/css/KORtx_demo/KShowPassword.css" />
+        <option value="$PROJECT_DIR$/display/js/KORtx/nodes/KShowPassword.js" />
         <option value="$PROJECT_DIR$/display/pages/test - variant.html" />
       </list>
     </option>
@@ -160,17 +172,125 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="KorTX Free" />
+              <option name="myItemId" value="KORtx Free" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx-Free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KORtx_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,8 +298,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -222,11 +342,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\My Resume\KorTX\Free\KORtx-Free\display\css\KORtx_demo" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js\KORTx\nodes" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\css\KORTx_demo" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js\KORTx\utility" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\css\KORTx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\css" />
@@ -239,7 +359,7 @@
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -261,10 +381,11 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49836066" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17862372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17862372" sideWeight="0.50163937" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -273,7 +394,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -340,13 +460,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/nodes/KAddableBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/display/css/jquery-ui.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="28" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
@@ -361,86 +474,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display/css/KORTx_demo/KChain.css">
+    <entry file="file://$PROJECT_DIR$/display/css/KORtx_demo/KFormFiller.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+        <state line="13" column="17" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display/css/KORTx_demo/KAddableBlock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/nodes/KChain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/nodes/KFollower-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="427" selection-end="427" vertical-scroll-proportion="0.23817864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/utility/Functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/core/KORTx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="567" selection-end="567" vertical-scroll-proportion="0.46575344">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/utility/Procedures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="823" selection-end="823" vertical-scroll-proportion="0.4257603">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/pages/test - variant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="15" selection-start="12172" selection-end="12172" vertical-scroll-proportion="-0.43486238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/nodes/KAddableBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="32" selection-start="6181" selection-end="6181" vertical-scroll-proportion="0.9417808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/css/KORTx_demo/KFormFiller.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="227" selection-end="227" vertical-scroll-proportion="0.37842464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display/css/KORTx_demo/Main.css">
+    <entry file="file://$PROJECT_DIR$/display/css/KORtx_demo/Main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.02910959">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display/js/KORTx/nodes/KCookies.js">
+    <entry file="file://$PROJECT_DIR$/display/css/KORtx_demo/KChain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="252" selection-end="297" vertical-scroll-proportion="0.17863397">
+        <state line="4" column="4" selection-start="42" selection-end="42" vertical-scroll-proportion="0.11643836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/css/KORtx_demo/KAddableBlock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="27" selection-start="267" selection-end="278" vertical-scroll-proportion="0.52397263">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/nodes/KCookies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="252" selection-end="252" vertical-scroll-proportion="0.17863397">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/nodes/KFollower-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="32" selection-start="317" selection-end="317" vertical-scroll-proportion="0.05954466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/nodes/KChain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.72773975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/core/KORtx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.52397263">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/nodes/KAddableBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="9" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/nodes/KShowPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/pages/test - variant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="49" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.31346154">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#1;n#i#0;n#div#1;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#1;n#i#0;n#div#3;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/utilities/Functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.64041096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/js/KORtx/utilities/Procedures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="739" selection-end="750" vertical-scroll-proportion="0.37842464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display/css/KORtx_demo/KShowPassword.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="251" selection-end="251" vertical-scroll-proportion="0.37842464">
           <folding />
         </state>
       </provider>

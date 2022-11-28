@@ -1,4 +1,4 @@
-KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
+KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
 /*
  KAddable is a handy tool that makes possible ease creation of block sets with different input types:
  from a simple ones like single text/image fields to complex forms, description cards, etc...
@@ -43,7 +43,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
          It has 5 fields:
          .value is either a simple type like string/int/etc  or  an Object with k => v pairs.
          [ k ] is a class/name marker of input for [ v ] value
-         ^^^ THIS PART REQUIRES KORTx.KFormFiller() for work
+         ^^^ THIS PART REQUIRES KORtx.KFormFiller() for work
          .hidden cause $.hide() method to be executed for specific input
          .disabled cause 'disabled' class and some properties to be added for specific input
          .class is used to add any class for input
@@ -59,7 +59,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
 
         constructor(blockClassNamePrefix, json_source, external_add_button_selector){
             this.counter = 0;
-            this.cloneAble = KORTx.Us.HtmTgs.getElementsThatContainClassThatStartsWith(blockClassNamePrefix, '.add-area');
+            this.cloneAble = KORtx.Us.HtmTgs.getElementsThatContainClassThatStartsWith(blockClassNamePrefix, '.add-area');
 
             if($(this.cloneAble).length){
                 this.WorkArea = $(this.cloneAble[0]).parents('.add-area').first();
@@ -114,7 +114,7 @@ KORTx = Object.assign((typeof KORTx !== 'undefined')?KORTx:{}, {
                 $(input).attr('name', result_name);
                 if(typeof options != "undefined" && options != null){
                     if (typeof options.value != "undefined" && options.value!=null) {
-                        if(typeof options.value == "object" && typeof KORTx.Us.KFormFiller != "undefined"){
+                        if(typeof options.value == "object" && typeof KORtx.Us.KFormFiller != "undefined"){
                             new KFormFiller(tmp, options.value);
                         } else {
                             $(input).attr("value", options.value);
