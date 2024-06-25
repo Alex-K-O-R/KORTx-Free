@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3d6688a-0641-4aa5-8515-fa001a8e6463" name="Default" comment="" />
-    <ignored path="KorTX Free.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/display/js/editors/AddableBlock.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1662236021650" ignored="false" />
-    <file path="/KORTx.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664223180929" ignored="false" />
-    <file path="/test - variant.html" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669119923697" ignored="false" />
-    <file path="/a.dummy" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121698103" ignored="false" />
-    <file path="/Primitive.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664109150777" ignored="false" />
-    <file path="/Functions.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664141819140" ignored="false" />
-    <file path="/Procedures.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664232955873" ignored="false" />
-    <file path="/KChain.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664128308185" ignored="false" />
-    <file path="/Main.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664223344299" ignored="false" />
-    <file path="/KAddableBlock.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664142630380" ignored="false" />
-    <file path="/KChain.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664127722576" ignored="false" />
-    <file path="/KAddableBlock.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664141051926" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/display/js/cookies.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664143504999" ignored="false" />
-    <file path="/KCookies.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664228631919" ignored="false" />
-    <file path="/KFollower-min.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664228257009" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/display/js/new/KFollower-min.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664228358337" ignored="false" />
-    <file path="/KFollower.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664228703783" ignored="false" />
-    <file path="/KFormFiller.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233422441" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/illusions_of_eternity/debug.log" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664232549958" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../Vystavka/expo/v2/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233015800" ignored="false" />
-    <file path="/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1664233014081" ignored="false" />
-    <file path="/KShowPassword.js" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669119646676" ignored="false" />
-    <file path="/KShowPassword.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669118598695" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/general/themes/common.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669122444515" ignored="false" />
-    <file path="/common.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669120580765" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/pages/users/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121479764" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/pages/login/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121638768" ignored="false" />
-    <file path="/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121630270" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/pages/login/register/index.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121658362" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/css/frame.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121793086" ignored="false" />
-    <file path="/frame.css" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121793086" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/WebUI.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669121861787" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Bee/display/general/footer.php" changelist="b3d6688a-0641-4aa5-8515-fa001a8e6463" time="1669122185346" ignored="false" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="b3d6688a-0641-4aa5-8515-fa001a8e6463" name="Default" comment="KORtx.js - merge tests.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/KORtx.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/KORtx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/nodes/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/nodes/nodeSync.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/nodeSync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/utilities/KChain.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/utilities/KChain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/pages/test - variant.html" beforeDir="false" afterPath="$PROJECT_DIR$/display/pages/test - variant.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="KorTX Free">
       <favorite_root url="file://$PROJECT_DIR$" module="KorTX Free" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
@@ -109,13 +78,25 @@
       </favorite_root>
     </favorites_list>
   </component>
-  <component name="FileEditorManager">
-    <leaf />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -139,23 +120,14 @@
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectId" id="2iFJKP4mg3ryXCEBWmDtyWe3mlH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -293,52 +265,20 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
-    <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="1f181976-174b-46f8-a699-42159cc9988e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="24faef2c-d627-4421-86f1-7bd113b32ed3">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="5dea1190-c9c0-4837-851c-3d24b3d3c0b2">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="6310af30-2864-4d41-99ef-5e067b07a2c0">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="aa7433ff-af36-4355-a819-b65bc68f9b89">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -349,11 +289,11 @@
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js\KORTx\utility" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\KORtx-Free\display\js\KORtx\core\jquery" />
+      <recent name="C:\Work\KORtx-Free\display\js\KORtx\core" />
+      <recent name="C:\Work\KORtx-Free\display\js\KORtx\utilities" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\css" />
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\pages" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js\KORTx" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\nodes" />
     </key>
   </component>
   <component name="RunManager">
@@ -364,15 +304,33 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="0" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b3d6688a-0641-4aa5-8515-fa001a8e6463" name="Default" comment="" />
       <created>1661798156701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1661798156701</updated>
+      <workItem from="1719080329251" duration="949000" />
+      <workItem from="1719144918052" duration="142000" />
+      <workItem from="1719145096049" duration="13006000" />
+      <workItem from="1719208886389" duration="64000" />
+      <workItem from="1719304047794" duration="489000" />
+      <workItem from="1719336856816" duration="9337000" />
+      <workItem from="1719381231204" duration="495000" />
+      <workItem from="1719690592532" duration="6787000" />
+      <workItem from="1719697457964" duration="98000" />
     </task>
+    <task id="LOCAL-00001" summary="KORtx.js - merge tests.">
+      <created>1719341845854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719341845854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -399,65 +357,42 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
-    <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
-    </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <MESSAGE value="KORtx.js - merge tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="KORtx.js - merge tests." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/display/css/jquery-ui.min.css">
@@ -578,4 +513,3 @@
     </entry>
   </component>
 </project>
-

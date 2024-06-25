@@ -1,4 +1,4 @@
-KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
+KORtx.addKORtxPart({
     /*
      Function KShowPassword allows you to show/hide passwords in inputs
      by tapping or clicking some activator element.

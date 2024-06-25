@@ -8,10 +8,4 @@ Look into [ KORTx-Free/display/pages/test - variant.html ] for examples. KORTx t
 
 KORTx-Free project is free of use (MIT). I will be glad if while using KORTx-Free, you will save a small credits to an author in commentaries.
 
-Also remember, that gratitude feels good, while currency supports good. :)
-
-If you like KORTx-Free so much or it did come handy and saved you a lot of time (nerves), you may provide some support for me (appreciate for anything)
-with Qiwi:
-+7(nine-zero-four)6543257
-
 Thanks for visiting and reading. Have a good luck!

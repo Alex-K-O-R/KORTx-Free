@@ -1,6 +1,5 @@
-KORtx.Us = Object.assign((typeof KORtx !== 'undefined' && typeof KORtx.Us !== 'undefined')?KORtx.Us:{},{
-//KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{},{
-//    Us: {
+KORtx.addKORtxPart({
+    Us: {
         HtmTgs: {
             getDataAttributes : function(node) {
                 var d = [];
@@ -45,4 +44,5 @@ KORtx.Us = Object.assign((typeof KORtx !== 'undefined' && typeof KORtx.Us !== 'u
             }
         }
 
+    }
 });

@@ -1,4 +1,4 @@
-KORtx = Object.assign((typeof KORtx !== 'undefined')?KORtx:{}, {
+KORtx.addKORtxPart({
 /*
  KAddable is a handy tool that makes possible ease creation of block sets with different input types:
  from a simple ones like single text/image fields to complex forms, description cards, etc...

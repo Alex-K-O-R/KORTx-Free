@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="../js/KORtx/core/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
-<script type="text/javascript" src="../js/jquery-ui.js" defer></script>
+    <script type="text/javascript" src="../js/KORtx/core/KORtx.js"></script>
 
-<script type="text/javascript" src="../js/KORtx/core/KORtx.js"></script>
-
-<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/Main.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KChain.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KAddableBlock.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KFormFiller.css" />
-<link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KShowPassword.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/Main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KChain.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KAddableBlock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KFormFiller.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KShowPassword.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
 </head>
 <body>
 
@@ -46,6 +43,11 @@
         <li class="light-tab item">
             <a href="#demo-form_tabs-6" class="light-tab-link">
                 KShowPassword
+            </a>
+        </li>
+        <li class="light-tab item">
+            <a href="#demo-form_tabs-7" class="light-tab-link">
+                Nodes
             </a>
         </li>
     </ul>
@@ -185,13 +187,25 @@
             </div>
         </div>
     </div>
+
+    <div id="demo-form_tabs-7" style="display: none;">
+        <div class="row">
+            Production status: <b>Delivering.</b>
+        </div>
+        <div class="row">
+            Please, w4it.
+        </div>
+    </div>
 </div>
 
 
 
 <script type="text/javascript">
-    $(document).ready(function(){
-    // KChain demo:
+    KORtx.onStart(function(){
+        console.log(KORtx);
+
+
+        // KChain demo:
         var area = document.getElementById("animation_area");
         var elmnts = document.getElementsByClassName("animation_chain");
         var slides = new KORtx.KChain.ChainParams(
@@ -248,7 +262,7 @@
 
         new KORtx.Us.KFormFiller('div.icon', data[0], 'button.fill_data1');
         new KORtx.Us.KFormFiller('div.icon', data[1], 'button.fill_data2');
-	
+
 
 
         // KFollower demo.
@@ -274,14 +288,15 @@
         new KORtx.KShowPassword('.case-second', '.target-second > input');
 
 
-        // Tabs part
-        $( "#demo-form_tabs" ).tabs({
-            active: (KORtx.KCookies.Get('last-selected-tab')===null)?0:KORtx.KCookies.Get('last-selected-tab')
-            , activate: function( event, ui ) {
-                if(window.location.origin.indexOf('file://')!==0) KORtx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
-            }
-        });
-
+        //Loading Jq Tabs
+        LoadJSScript('../js/jquery-ui.js').then(() => function (){
+            $( "#demo-form_tabs" ).tabs({
+                active: (KORtx.KCookies.Get('last-selected-tab')===null)?0:KORtx.KCookies.Get('last-selected-tab')
+                , activate: function( event, ui ) {
+                    if(window.location.origin.indexOf('file://')!==0) KORtx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
+                }
+            });
+        }());
     });
 </script>
 
