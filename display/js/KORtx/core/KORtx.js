@@ -2,6 +2,7 @@ function LoadJSScript(filePath) {
     return new Promise((loaded, error) => {
         var script = document.createElement('script');
         script.src = filePath;
+        script.async = false;
         script.defer = true;
         script.type = 'text/javascript';
         document.head.append(script);
@@ -22,6 +23,7 @@ function LoadJSLibrary(scriptsArr, readyFunction, ...args) {
 
 
 class KORtx {
+    Nodes = [];
     static merge(current, updates) {
         if(current) {
             for (var key of Object.keys(updates)) {
@@ -40,6 +42,12 @@ class KORtx {
     onStart = function (startFunc, ...args) {
         LoadJSLibrary([
             '../js/KORtx/core/jquery/jquery-3.6.1.min.js',
+            '../js/KORtx/core/nodes/base.js',
+            '../js/KORtx/core/nodes/KNodeAsync.js',
+            '../js/KORtx/core/nodes/KNodeSync.js',
+            '../js/KORtx/core/layers/base.js',
+            '../js/KORtx/core/layers/KTimeLayer.js',
+            '../js/KORtx/core/layers/KEventLayer.js',
             '../js/KORtx/utilities/Functions.js',
             '../js/KORtx/utilities/Procedures.js',
             '../js/KORtx/utilities/KChain.js',
@@ -50,6 +58,11 @@ class KORtx {
             '../js/KORtx/utilities/KShowPassword.js'],
             startFunc, args
         );
+    }
+
+    emitEvent = function (eventName, parameters) {
+        var event = new CustomEvent(eventName, {detail: parameters});
+        document.dispatchEvent(event);
     }
 }
 

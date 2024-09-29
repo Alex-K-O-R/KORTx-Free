@@ -7,17 +7,17 @@ KORtx.addKORtxPart({
      3 parameters possible, of these only 2 are necessary:
         targetFormOrParentElement - selector of form or HTML block that has children between which values should be
                                     spreaded;
-        formData - JSON object as key => JSON.stringify(val) means name/class HTML block to get value;
+        jsonFormData - JSON object as key => JSON.stringify(val) means name/class HTML block to get value;
         activatorElementSelector - if passed, click on this element is required to distribute some data.
      */
         KFormFiller : class
         {
-            constructor(targetFormOrParentElement, formData, activatorElementSelector)
+            constructor(targetFormOrParentElement, jsonFormData, activatorElementSelector)
             {
                 this.formEl = null
                 var self_ = this;
 
-                if (typeof targetFormOrParentElement !== 'undefined' && typeof formData !== 'undefined'){
+                if (typeof targetFormOrParentElement !== 'undefined' && typeof jsonFormData !== 'undefined'){
                     if(typeof targetFormOrParentElement == "object"){
                         self_.formEl = targetFormOrParentElement;
                     } else {
@@ -27,34 +27,34 @@ KORtx.addKORtxPart({
                     if(self_.formEl){
                         if (typeof activatorElementSelector !== 'undefined'){
                             $(activatorElementSelector).on('click', function(event){
-                                self_.PlaceData(formData);
+                                self_.PlaceData(jsonFormData);
                                 event.preventDefault();
                                 $('html, body').stop().animate({
                                     scrollTop: $(self_.formEl).offset().top
                                 }, 200);
                             })
                         } else {
-                            self_.PlaceData(formData);
+                            self_.PlaceData(jsonFormData);
                         }
                     }
 
                 }
             }
 
-            PlaceData = function(formData){
+            PlaceData = function(jsonFormData){
                 var self_ = this;
                 var inputs = self_.formEl.find('input, textarea, select');
                 $(inputs).each(function(k,v){
-                    if(formData.hasOwnProperty($(v).prop('name'))){
+                    if(jsonFormData.hasOwnProperty($(v).prop('name'))){
                         if(['ínput', 'textarea'].indexOf($(v).prop('tagName').toLowerCase())){
                             if(!$(v).is(':checkbox')){
                                 if($(v).is(':file')) {
                                     console.log('WARNING! KFF doesn\'t mess with input-FILE-type!');
                                 } else {
-                                    $(v).prop('value', (formData[$(v).prop('name')]!=='')?JSON.parse(formData[$(v).prop('name')]):'');
+                                    $(v).prop('value', (jsonFormData[$(v).prop('name')]!=='')?JSON.parse(jsonFormData[$(v).prop('name')]):'');
                                 }
                             } else {
-                                if (formData[$(v).prop('name')] !== '' && JSON.parse(formData[$(v).prop('name')])==true){
+                                if (jsonFormData[$(v).prop('name')] !== '' && JSON.parse(jsonFormData[$(v).prop('name')])==true){
                                     $(v).prop('checked', true);
                                     $(v).val(true);
                                 } else {
@@ -65,14 +65,14 @@ KORtx.addKORtxPart({
                             $(v).trigger('change');
                         } else {
                             // TODO: select tag?
-                            //$(v).children("option[value=" + formData[$(v).prop('name')] + "]").first()
+                            //$(v).children("option[value=" + jsonFormData[$(v).prop('name')] + "]").first()
                             //    .prop("selected", true);
-                            //$(v).prop('value', (formData[$(v).prop('name')]!=='')?JSON.parse(formData[$(v).prop('name')]):'');
+                            //$(v).prop('value', (jsonFormData[$(v).prop('name')]!=='')?JSON.parse(jsonFormData[$(v).prop('name')]):'');
                         }
                     }
                 });
 
-                $.each(formData, function(key,v){
+                $.each(jsonFormData, function(key,v){
                     var arrayContainerFound = key.endsWith("[]");
                     if(arrayContainerFound) key = key.substring(0, key.length-2);
                     var elem = self_.formEl.find('div'+(key.startsWith('.')?key:('.'+key)));
@@ -105,6 +105,18 @@ KORtx.addKORtxPart({
                     }
                 });
 
+            }
+        },
+
+        fillFormDataFromObject(formData, data, parentKey) {
+            if (data && typeof data === 'object' && !(data instanceof Date) && !(data instanceof File) && !(data instanceof Blob)) {
+                Object.keys(data).forEach(key => {
+                    KORtx.Us.fillFormDataFromObject(formData, data[key], parentKey ? `${parentKey}[${key}]` : key);
+                });
+            } else {
+                const value = data == null ? '' : data;
+        
+                formData.append(parentKey, value);
             }
         }
     }

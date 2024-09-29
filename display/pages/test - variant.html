@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="../js/transfers/transfer.js"></script>
     <script type="text/javascript" src="../js/KORtx/core/KORtx.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/Main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/pages/DemoPages.css" />
+    <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/pages/Menus.css" />
     <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KChain.css" />
     <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KAddableBlock.css" />
     <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KFormFiller.css" />
     <link rel="stylesheet" type="text/css" href="../css/KORtx_demo/KShowPassword.css" />
     <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layouts_js/jq-tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick-pages.css" />
 </head>
 <body>
 
-
 <div id="demo-form_tabs">
     <ul class="ui secondary pointing menu light-menu">
-        <li class="light-tab item active">
+        <li class="light-tab item">
             <a href="#demo-form_tabs-1" class="light-tab-link">
                 KChain
             </a>
@@ -45,13 +51,13 @@
                 KShowPassword
             </a>
         </li>
-        <li class="light-tab item">
+        <li class="light-tab item active">
             <a href="#demo-form_tabs-7" class="light-tab-link">
                 Nodes
             </a>
         </li>
     </ul>
-    <div id="demo-form_tabs-1">
+    <div id="demo-form_tabs-1" style="display: none;">
         <div class="row">
             <div id="animation_area">
             <div class="animation_chain" data-item="1" data-otem="1"></div>
@@ -73,7 +79,7 @@
                         <div class="addable element">
                             <label>
                                 <input type="checkbox" value="" name="top-{i}">
-                                Открывать в новом окне
+                                Открывать в новом окне <!--//TODO: translate-->
                             </label>
                             <input type="text" value="" name="string-{i}" placeholder="Текст ссылки">
                             <input type="url" value="" name="url-{i}" placeholder="Описание">
@@ -188,22 +194,394 @@
         </div>
     </div>
 
-    <div id="demo-form_tabs-7" style="display: none;">
-        <div class="row">
-            Production status: <b>Delivering.</b>
-        </div>
-        <div class="row">
-            Please, w4it.
+    <div id="demo-form_tabs-7">
+        <div id="nodes_pages">
+            <div id="page-1" class="page_example">
+                <div class="site-header">
+                    <div class="flx-nwrp logo">
+                        <a class="flx-rel-h100" href="#">
+                            <div class="flx-rel-h100 wrapper">
+                                <div class="svg">
+                                </div>
+                            </div>
+                            <div class="flx-nln title">
+                                <span>Demo pages</span>
+                            </div>
+                        </a>
+                        <div class="spacer">
+                        </div>
+                    </div>
+                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                        <div class="flx-nln input">
+                            <input type="text" />
+                        </div>
+                        <button class="flx-rel-h100 wrapper">
+                            <div class="svg">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="nav">
+                        <nav role="navigation">
+                            <ul>
+                                <li class="button menu">
+                                    <div class="svg"></div>
+                                    <ul class="dropdown">
+                                        <li class="selected"><a href="#">Page 1</a></li>
+                                        <li><a href="#">Page 2</a></li>
+                                        <li><a href="#">Page 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="login in" data-ktmlay="logon">
+                        <a class="flx-rel-h100 svg" href="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="site-content">
+                    <div id="huge_banner" class="hblck">
+                        <img src="../img/page-1/bg/2.jpg">
+                        <img src="../img/page-1/bg/5.jpg">
+                        <img src="../img/page-1/bg/1.jpg">
+                        <div class="pgram"><span>Pursue</span></div>
+                        <div class="pgram"><span>Achieve</span></div>
+                        <div class="pgram"><span>Imagine</span></div>
+                    </div>
+                    <div class="hblck cntr-hdr">
+                        <h1>Demo of KORtx-Free capabilities</h1>
+                    </div>
+                    <div id="mid_slider" data-kevlay="search-cars" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                        <div><div class="content"><img src="../img/page-1/pic%205.jpg"><span>Image 5</span></div></div>
+                        <div><div class="content"><img src="../img/page-1/pic%206.jpg"><span>Photo 6</span></div></div>
+                        <div><div  class="content"><img src="../img/page-1/pic%207.jpeg"><span>7. Car</span></div></div>
+                    </div>
+                    <div class="vblck paragraphs">
+                        <p>Every page of this demo has some groups of elements that are distributed among virtual layers ("Nodes" & "Layers").</p>
+                        <p>In this demo 3 layers are used: 2 of these are synchronous and 1 &mdash; asynchronous. The key difference is in the layer's capabilities to react.</p>
+                        <p>In the footer you can see separate buttons that provokes each layer's reactions.</p>
+                    </div>
+                </div>
+                <div class="site-footer"></div>
+            </div>
+            <div id="page-2" class="page_example">
+                <div class="site-header">
+                    <div class="flx-nwrp logo">
+                        <a class="flx-rel-h100" href="#">
+                            <div class="flx-rel-h100 wrapper">
+                                <div class="svg">
+                                </div>
+                            </div>
+                            <div class="flx-nln title">
+                                <span>Demo pages</span>
+                            </div>
+                        </a>
+                        <div class="spacer">
+                        </div>
+                    </div>
+                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                        <div class="flx-nln input">
+                            <input type="text" />
+                        </div>
+                        <button class="flx-rel-h100 wrapper">
+                            <div class="svg">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="nav">
+                        <nav role="navigation">
+                            <ul>
+                                <li class="button menu">
+                                    <div class="svg"></div>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Page 1</a></li>
+                                        <li class="selected"><a href="#">Page 2</a></li>
+                                        <li><a href="#">Page 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="login in">
+                        <a class="flx-rel-h100 svg" href="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="vblck">
+                    <div class="cntr-hdr">
+                        <h1>KORtx-Free Layers</h1>
+                    </div>
+                </div>
+                <div id="top_slider" data-kevlay="search-cars" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                    <div data-item="car" data-id="1"><div class="content"><img src="../img/page-2/pic%201.jpg"><span>Pic 1</span></div></div>
+                    <div data-item="car" data-id="2"><div class="content"><img src="../img/page-2/pic%202.jpg"><span>Pic 2</span></div></div>
+                    <div data-item="car" data-id="3"><div class="content"><img src="../img/page-2/pic%204.jpg"><span>Image 4</span></div></div>
+                    <div data-ktmlay="logon, user_rights"><a class="content" href="" onclick="return false;"><img src="../img/page-1/pic%20add.png"></a></div>
+                </div>
+                <div id="top_accordion">
+                    <div class="flex-item-tab header item cntr-hdr">
+                        <span data-id="1">Pic 1. Yellow car.</span>
+                        <span class="hddn" data-id="2">Pic 2. Black car.</span>
+                        <span class="hddn" data-id="3">Image 4. Two cars.</span>
+                    </div>
+                    <div class="flex-item-tab paragraphs">
+                        <p data-id="1">KORtx-Free Layer is the collection of DOM-elements that are being changed by different triggers, but at the same time (as a result of specific single request).
+                            For example, every 60 seconds, request about current user role is sent to some entry-point. Depending on the result, some elements should become disabled, inactive or hidden.
+                        </p>
+                        <p class="hddn" data-id="2">
+                            KORtx-Free operates time's driven layers (TimeLay) and event's driven layers (EventLay).
+                            After specific of layers had been created with constructors, collection of elements should be described either by jquery selectors or by general data-attribute within every layer.
+                        </p>
+                        <p class="hddn" data-id="3">
+                            Collection of DOM-elements is represented by two types of nodes: NodeSync and NodeAsync.
+                        </p>
+                    </div>
+                    <div class="flex-item-tab header cntr-hdr"><span>Technical specs</span></div>
+                    <div class="flex-item-tab paragraphs">
+                        <div data-id="1" class="list vblck">
+                            <div class="row">
+                                <span class="name">Speed</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Fast</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Handling</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Good</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Trunk</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Toy sized</span>
+                            </div>
+                        </div>
+                        <div class="hddn list vblck" data-id="2">
+                            <div class="row">
+                                <span class="name">Speed</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Faster</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Handling</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Good</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Trunk</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Still small</span>
+                            </div>
+                        </div>
+                        <div class="hddn list vblck" data-id="3">
+                            <div class="row">
+                                <span class="name">Speed</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Very fast</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Handling</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Good</span>
+                            </div>
+                            <div class="row">
+                                <span class="name">Trunk</span>
+                                <span class="delimeter"></span>
+                                <span class="value">Two smalls</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer"></div>
+            </div>
+            <div id="page-3" class="page_example">
+                <div class="site-header">
+                    <div class="flx-nwrp logo">
+                        <a class="flx-rel-h100" href="#">
+                            <div class="flx-rel-h100 wrapper">
+                                <div class="svg">
+                                </div>
+                            </div>
+                            <div class="flx-nln title">
+                                <span>Demo pages</span>
+                            </div>
+                        </a>
+                        <div class="spacer">
+                        </div>
+                    </div>
+                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                        <div class="flx-nln input">
+                            <input type="text" />
+                        </div>
+                        <button class="flx-rel-h100 wrapper">
+                            <div class="svg">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="nav">
+                        <nav role="navigation">
+                            <ul>
+                                <li class="button menu">
+                                    <div class="svg"></div>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Page 1</a></li>
+                                        <li><a href="#">Page 2</a></li>
+                                        <li class="selected"><a href="#">Page 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="login in">
+                        <a class="flx-rel-h100 svg" href="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="site-content">
+                    <div class="container">
+                        <div class="vblck">
+                            <div class="cntr-hdr">
+                                <h1>KORtx-Free Nodes</h1>
+                            </div>
+                        </div>
+                        <div class="flex-grid">
+                            <div class="colspan">
+                                <div class="actual-border">
+                                    <div class="virtual-border">
+                                        <div class="aligner">
+                                            <div class="border-decor lu"></div>
+                                            <div class="border-decor lb"></div>
+                                            <div class="border-decor ru"></div>
+                                            <div class="border-decor rb"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="desc">
+                                            <div class="img" style="background-image: url('../img/page-3/battery-147-512.png');"></div>
+                                            <div class="text">
+                                                <div class="edit_button"></div>
+                                                Also consider moving to another country if it is needed for some interesting work
+                                                <a href="">More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item even">
+                                        <div class="desc">
+                                            <div class="img" style="background-image: url('../img/page-3/aerospace-aerospace-universe-galaxy-512.png');"></div>
+                                            <div class="text">
+                                                <div class="edit_button"></div>
+                                                Also consider moving to another country if it is needed for some interesting work
+                                                <a href="">More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="desc">
+                                            <div class="img" style="background-image: url('../img/page-3/cute-aerospace-star-512.png');"></div>
+                                            <div class="text">
+                                                <div class="edit_button"></div>
+                                                Also consider moving to another country if it is needed for some interesting work
+                                                <a href="">More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item even">
+                                        <div class="desc">
+                                            <div class="img" style="background-image: url('../img/page-3/space-earth-orbit-universe-satellite-512.png');"></div>
+                                            <div class="text">
+                                                <div class="edit_button"></div>
+                                                Also consider moving to another country if it is needed for some interesting work
+                                                <a href="">More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img" style="background-color: #dddddd;background-image: url('../img/page-3/cute-aerospace-satellite-512.png');"></div>
+                                <div class="base">
+                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img" style="background-color: #aaaaaa; background-image: url('../img/page-3/cute-aerospace-cloud-512.png');"></div>
+                                <div class="base">
+                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img" style="background-color: #777777; background-image: url('../img/page-3/drone-surveillance-512.png');"></div>
+                                <div class="base">
+                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img" style="background-color: #444444; background-image: url('../img/page-3/war-8-512.png');"></div>
+                                <div class="base">
+                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img" style="background-color: #b30e08; background-image: url('../img/page-3/water-9-512.png');"></div>
+                                <div class="base">
+                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blank">
+                        <h1>Mountain Star Zlatibor</h1>
+                        <div class="text">
+                            <a href="#">
+                        <p>
+
+                                Zlatibor is a mountain of exceptional beauty whose special geographical properties have made this mountain a real gem of western Serbia.
+
+                        </p>
+                        <p>&rarr;</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container second">
+                        <div class="item">
+                            <div class="img" style="background-image: url('../img/page-3/atom-23-512.png');"></div>
+                            <div class="card">
+                                <h3>Rock climbing</h3>
+                                <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img" style="background-image: url('../img/page-3/galaxy-4-512.png');"></div>
+                            <div class="card">
+                                <h3>Caving</h3>
+                                <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial.</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="site-footer" data-kevlay="search-cars">
+                    <div>
+                        <button class="demo run" data-knode="async">Play demo</button>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 
-
 <script type="text/javascript">
     KORtx.onStart(function(){
-        console.log(KORtx);
-
 
         // KChain demo:
         var area = document.getElementById("animation_area");
@@ -211,7 +589,7 @@
         var slides = new KORtx.KChain.ChainParams(
                 [500, 2500]
                 , function(div){
-                    var randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
+                    var randomColor = KORtx.Us.HtmTgs.getRandomHEXColor();
                     div.style.backgroundColor = randomColor;
                     div.style.display='inline-block';
                     div.classList.add('alarm-on');
@@ -288,13 +666,119 @@
         new KORtx.KShowPassword('.case-second', '.target-second > input');
 
 
-        //Loading Jq Tabs
-        LoadJSScript('../js/jquery-ui.js').then(() => function (){
+
+        //KORtx.Nodes
+        var test = new KORtx.KTimeLayer('logon');
+
+        var test2 = new KORtx.KTimeLayer('logon');
+//var abc = new KORtx.Node();
+
+
+
+
+
+
+
+
+        // Layer construction
+        var evTest = new KORtx.KEventLayer('search-cars', 'searchEvt', function (self_){
+            self_.transfer = {};
+            console.log(self_.name+' event layer is loaded.');
+        });
+        // Optional request setup (.useSpecificAjaxSettings method is available for specific Ajax settings);
+        evTest.useRequestJson('https://google.com/', 'POST', ReturnResult);
+
+        // Adding elements that should react to some event
+        evTest.addNodeAsync('input[type=text]',
+            function (evt, layer, elem) {/*alert('Bleep '+evt.abc+'!');*/
+                if(typeof layer.transfer['search'] === 'undefined') {
+                    layer.transfer['search'] = [];
+                }
+                layer.transfer['search'].push(elem.val());
+
+                if(typeof layer.interResults === 'undefined') {
+                    layer.interResults = 1;
+                }
+                layer.interResults++;
+
+                elem.css('background', KORtx.Us.HtmTgs.getRandomHEXColor());
+                elem.attr('disabled', 'disabled');
+            },
+            function (evt, layer, elem) {
+                elem.removeAttr('disabled');
+            }
+        );
+        console.log('---------------- // --------------');
+        // Definition of event emitter
+        evTest.getNodesContentElements('button:not(.demo.run)')?.on('click', function (){
+            KORtx.emitEvent('searchEvt', {abc: 'Yeah!'});
+        });
+//         const element = document.createElement("div"); // create a <div> element
+//
+// // add an appropriate event listener
+//         element.addEventListener("animalfound", (e) => console.log(e.detail.name));
+//
+        console.log('--------------- >> ---------------');
+        evTest.showNodes();
+        console.log(test2);
+        console.log(evTest);
+        var nodes = evTest.getNodes(['#mid_slider', '#top_slider']);
+        console.log(nodes);
+
+        //Loading Jq Tabs && slider
+        Promise.allSettled([
+            LoadJSScript('../js/jquery-ui.min.js'),
+            LoadJSScript('../js/layouts/slick.min.js')
+        ]).then(() => function (){
             $( "#demo-form_tabs" ).tabs({
-                active: (KORtx.KCookies.Get('last-selected-tab')===null)?0:KORtx.KCookies.Get('last-selected-tab')
+                active: (KORtx.KCookies.Get('last-selected-tab')===null)?6:KORtx.KCookies.Get('last-selected-tab')
                 , activate: function( event, ui ) {
                     if(window.location.origin.indexOf('file://')!==0) KORtx.KCookies.Set('last-selected-tab', $( "#demo-form_tabs" ).tabs( "option", "active"), 2);
                 }
+            });
+
+            $( function() {
+                $( "#top_accordion" ).accordion({
+                        header: "> .flex-item-tab.header",
+                        active: 0,
+                        collapsible: true,
+                        classes: {
+                            "ui-accordion-header": "",
+                            "ui-accordion-header-collapsed": "",
+                            "ui-accordion-content": "",
+                        },
+                        icons: {
+                            "header": "block-closed",
+                            "activeHeader": "block-open",
+                        },
+                        heightStyle: "fill",
+                    });
+            } );
+
+            $('#nodes_pages #top_slider').slick({
+                //autoplay: true,
+                //autoplaySpeed: 3000,
+                arrows: true,
+                focusOnSelect: true,
+            }).on('afterChange', function(event, slick, currentSlide){
+                var idSelected = $('.slick-current', slick.getSlick().$slider).data('id');
+                $('#nodes_pages #top_accordion .header.item span, ' +
+                    '#nodes_pages #top_accordion .paragraphs [data-id]').each(function (i,e){
+                    if($(e).data('id') == idSelected){
+                        $(e).removeClass('hddn');
+                    } else {
+                        $(e).addClass('hddn');
+                    }
+                     //console.log(e);
+                });
+                //remove()Class();
+            });
+
+            $('#nodes_pages #mid_slider').slick({
+                autoplay: true,
+                //autoplaySpeed: 3000,
+                arrows: false,
+                dots: true,
             });
         }());
     });

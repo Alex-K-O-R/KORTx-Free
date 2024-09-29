@@ -1,6 +1,20 @@
-#demo-form_tabs .ui-tabs-active.ui-state-active {
-    border-bottom: 2px solid deepskyblue;
+html {
+    min-height: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    padding: 0;
+
+    font-family: 'Red Hat Text', sans-serif;
+}
+
 .action_btn {
     position: fixed;
     bottom: 20px;
@@ -9,4 +23,91 @@
 div.row{
     position: relative;
     margin: 1.5em 0 0 2em;
+}
+
+.demo-body {
+
+}
+
+.large-scope {
+
+}
+
+div.svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flx-nwrp {
+    display: flex;
+    width: inherit;
+    flex-basis: auto;
+    flex-flow: nowrap;
+}
+
+.flx-nln {
+    white-space: nowrap;
+    display: inline-flex;
+    width: unset;
+    line-height: inherit;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flx-rel-h100 {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.cntr-hdr {
+    margin-top: 1vh;
+    padding: 1vh 2.5vh 0 2.5vh;
+    text-align: center;
+}
+
+.hblck {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vblck {
+    display: flex;
+    margin-block: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+}
+
+.hddn{
+    display: none;
+}
+
+.pgram {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font: 1.2rem 'Fira Sans', sans-serif;
+    padding: 4px;
+    font-style: italic;
+    background: #32557f;
+    transform: skew(341deg);
+}
+
+.pgram span {
+    transform: skew(-341deg);
+    display: inline-block;
 }

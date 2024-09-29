@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3d6688a-0641-4aa5-8515-fa001a8e6463" name="Default" comment="KORtx.js - merge tests.">
+    <list default="true" id="b3d6688a-0641-4aa5-8515-fa001a8e6463" name="Default" comment="- realization of chain">
+      <change afterPath="$PROJECT_DIR$/display/css/KORtx_demo/pages/DemoPages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/css/KORtx_demo/pages/Menus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/css/layouts_js/jq-tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/css/layouts_js/slick-pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/js/KORtx/core/layers/KTimeLayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/KNodeAsync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/KNodeSync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/js/transfers/transfer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/css/KORtx_demo/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/css/KORtx_demo/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/KORtx.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/KORtx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/nodes/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/nodes/nodeSync.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/nodes/nodeSync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/js/KORtx/utilities/KChain.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/utilities/KChain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/layers/KEventLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/layers/KEventLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/layers/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/core/layers/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/layers/timeLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/core/nodes/nodeAsync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/js/KORtx/utilities/Functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/display/js/KORtx/utilities/Functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display/pages/test - variant.html" beforeDir="false" afterPath="$PROJECT_DIR$/display/pages/test - variant.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +92,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -90,6 +102,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -97,6 +112,24 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="KORtx.js - merge tests." />
+        <option name="rewordedMessage" value="- finalized import methods;&#10;- basics image for KORtx Free mechanics." />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="93d41239245ee1487d9bbfd01c3b15cd701ac174" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -274,6 +307,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -289,11 +323,11 @@
       <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js\KORTx\utility" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\KORtx-Free\display\js\transfers" />
+      <recent name="C:\Work\KORtx-Free\display\js" />
+      <recent name="C:\Work\KORtx-Free\display\img\page-1" />
+      <recent name="C:\Work\KORtx-Free\display\css\KORtx_demo\pages" />
       <recent name="C:\Work\KORtx-Free\display\js\KORtx\core\jquery" />
-      <recent name="C:\Work\KORtx-Free\display\js\KORtx\core" />
-      <recent name="C:\Work\KORtx-Free\display\js\KORtx\utilities" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\css" />
-      <recent name="D:\Work\My Resume\KorTX\Free\KorTX Free\display\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -322,6 +356,41 @@
       <workItem from="1719381231204" duration="495000" />
       <workItem from="1719690592532" duration="6787000" />
       <workItem from="1719697457964" duration="98000" />
+      <workItem from="1719746587564" duration="598000" />
+      <workItem from="1719818613683" duration="601000" />
+      <workItem from="1721285672055" duration="7923000" />
+      <workItem from="1721301674581" duration="1107000" />
+      <workItem from="1721312537421" duration="2077000" />
+      <workItem from="1721571767610" duration="16873000" />
+      <workItem from="1721760542939" duration="15106000" />
+      <workItem from="1721852700509" duration="6157000" />
+      <workItem from="1721904304022" duration="16000" />
+      <workItem from="1721933745623" duration="8826000" />
+      <workItem from="1722095753448" duration="7104000" />
+      <workItem from="1722276133005" duration="10741000" />
+      <workItem from="1722447367657" duration="4541000" />
+      <workItem from="1722533607094" duration="8660000" />
+      <workItem from="1722778736183" duration="5629000" />
+      <workItem from="1722890872609" duration="2363000" />
+      <workItem from="1722967291045" duration="613000" />
+      <workItem from="1723061993782" duration="4786000" />
+      <workItem from="1723149964584" duration="1531000" />
+      <workItem from="1723199986624" duration="34342000" />
+      <workItem from="1723445882752" duration="473000" />
+      <workItem from="1723486936104" duration="6959000" />
+      <workItem from="1723630061282" duration="26924000" />
+      <workItem from="1725127541623" duration="12466000" />
+      <workItem from="1725463452693" duration="1774000" />
+      <workItem from="1725549723758" duration="659000" />
+      <workItem from="1725708179454" duration="15296000" />
+      <workItem from="1726169156574" duration="596000" />
+      <workItem from="1726411857038" duration="5144000" />
+      <workItem from="1726514664555" duration="4627000" />
+      <workItem from="1727073680260" duration="5244000" />
+      <workItem from="1727627480249" duration="8741000" />
+      <workItem from="1727714364386" duration="8955000" />
+      <workItem from="1727800317151" duration="4659000" />
+      <workItem from="1727935355930" duration="4978000" />
     </task>
     <task id="LOCAL-00001" summary="KORtx.js - merge tests.">
       <created>1719341845854</created>
@@ -330,7 +399,28 @@
       <option name="project" value="LOCAL" />
       <updated>1719341845854</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- finalized import methods;&#10;- basics image for KORtx Free mechanics.">
+      <created>1719746864314</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719746864314</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- realization of chain">
+      <created>1727641593571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727641593571</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- realization of chain">
+      <created>1727803106409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727803106409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -384,15 +474,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
     <MESSAGE value="KORtx.js - merge tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="KORtx.js - merge tests." />
+    <MESSAGE value="- finalized import methods;&#10;- base image for KORtx Free mechanics." />
+    <MESSAGE value="- realization of chain" />
+    <option name="LAST_COMMIT_MESSAGE" value="- realization of chain" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/display/css/jquery-ui.min.css">

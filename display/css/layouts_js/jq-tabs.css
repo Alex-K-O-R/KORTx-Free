@@ -1,0 +1,44 @@
+.ui-tabs-nav {
+    --color: #333;
+}
+
+#demo-form_tabs {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+#demo-form_tabs .ui-tabs-tab {
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+#demo-form_tabs .ui-tabs-anchor {
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+}
+
+#demo-form_tabs ul.ui-tabs-nav {
+    margin: 0;
+    max-height: 10%;
+}
+
+#demo-form_tabs div[id^='demo-form_tabs'] {
+    inset: 0;
+    flex: 1 1 0;
+    min-height: 90%;
+}
+
+#demo-form_tabs .ui-tabs-active.ui-state-active {
+    border-bottom: 2px solid deepskyblue;
+}

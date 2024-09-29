@@ -27,6 +27,8 @@ KORtx.addKORtxPart({
                 }
                 return result;
             }
+
+            ,getRandomHEXColor : function () {return "#"+((1<<24)*Math.random()|0).toString(16);}
         }
         ,Glbl: {
             Cdf : function(obj){
@@ -41,6 +43,21 @@ KORtx.addKORtxPart({
                     if(obj !== null) {return true;}
                 }
                 return false;
+            }
+            , ToArray(something) {
+                if(something) {
+                    if(Array.isArray(something)){
+                        return something;
+                    }
+                    if (something.constructor === Object) {
+                        return Object.values(obj);
+                    } else {
+                        var arr = [];
+                        arr.push(something);
+                        return arr;
+                    }
+                }
+                return null;
             }
         }
 

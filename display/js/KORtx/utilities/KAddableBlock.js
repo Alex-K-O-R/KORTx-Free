@@ -69,14 +69,14 @@ KORtx.addKORtxPart({
 
                 this.cloneAble.hide();
                 this.WorkArea.children().remove();
-                var _self = this;
+                var self_ = this;
 
                 if(typeof external_add_button_selector != "undefined"){
                     $(external_add_button_selector).click(
-                        function(){_self.Place(_self);}
+                        function(){self_.Place(self_);}
                     );
                 } else {
-                    this.WorkArea.find('.add-plus').first().click(function(){_self.Place(_self);});
+                    this.WorkArea.find('.add-plus').first().click(function(){self_.Place(self_);});
                 }
             }
 
@@ -85,9 +85,9 @@ KORtx.addKORtxPart({
                     if(e!=null){
                         var rec = new AddableSourceRecord(e);
                         if(typeof rec["order"]!=="undefined"){
-                            _self.Place(_self, rec, rec.order);
+                            self_.Place(self_, rec, rec.order);
                         } else {
-                            _self.Place(_self, rec);
+                            self_.Place(self_, rec);
                         }
                     }
                 });
