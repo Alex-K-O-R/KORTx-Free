@@ -118,6 +118,40 @@ KORtx.addKORtxPart({
         
                 formData.append(parentKey, value);
             }
+        },
+
+        HtmTgs : {
+            getLoaderDiv : function(imageUrlOrClassOrIdSelector, cssSettings) {
+                var div = document.createElement("div");
+                $(div).css({
+                    display: 'none',
+                    position: 'relative', width: '100%',
+                });
+                $(div).addClass('KORtx-loader')
+
+                var loader = document.createElement("div");
+                div.appendChild(loader);
+                $(loader).css({
+                    position: 'absolute',
+                });
+                if(imageUrlOrClassOrIdSelector[0] == '.'){
+                    $(loader).addClass(imageUrlOrClassOrIdSelector.substring(1));
+                } else if (imageUrlOrClassOrIdSelector[0] == '#'){
+                    $(loader).attr('id', imageUrlOrClassOrIdSelector.substring(1));
+                } else {
+                    $(loader).css({
+                        background: 'url(' + imageUrl + ') no-repeat fixed center',
+                        backgroundSize: '40%'
+                    });
+                }
+
+                if(typeof cssSettings !== 'undefined') {
+                    $(loader).css(cssSettings);
+                }
+                $(div).css('display', 'inline-block');
+
+                return $(div);
+            }
         }
     }
 });

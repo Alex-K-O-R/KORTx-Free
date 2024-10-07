@@ -12,9 +12,11 @@ class ReturnResult {
     show_black_cars;
 
     constructor(DATA) {
-        this.username = DATA['username'];
-        this.is_admin = DATA['is_admin'];
-        this.show_black_cars = DATA['show_black_cars'];
+        if(typeof DATA !== 'undefined') {
+            this.username = DATA['username'];
+            this.is_admin = DATA['is_admin'];
+            this.show_black_cars = DATA['show_black_cars'];
+        }
     }
 }
 

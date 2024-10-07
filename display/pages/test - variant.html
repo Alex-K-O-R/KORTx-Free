@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="../css/layouts_js/slick-pages.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layouts_js/commons.css" />
 </head>
 <body>
 
@@ -211,7 +212,7 @@
                         <div class="spacer">
                         </div>
                     </div>
-                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                    <div class="flx-nwrp search" data-kevlay="search-p1">
                         <div class="flx-nln input">
                             <input type="text" />
                         </div>
@@ -251,7 +252,7 @@
                     <div class="hblck cntr-hdr">
                         <h1>Demo of KORtx-Free capabilities</h1>
                     </div>
-                    <div id="mid_slider" data-kevlay="search-cars" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                    <div id="mid_swiper" data-kevlay="search-p1" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                         <div><div class="content"><img src="../img/page-1/pic%205.jpg"><span>Image 5</span></div></div>
                         <div><div class="content"><img src="../img/page-1/pic%206.jpg"><span>Photo 6</span></div></div>
                         <div><div  class="content"><img src="../img/page-1/pic%207.jpeg"><span>7. Car</span></div></div>
@@ -279,7 +280,7 @@
                         <div class="spacer">
                         </div>
                     </div>
-                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                    <div class="flx-nwrp search" data-kevlay="search-p2">
                         <div class="flx-nln input">
                             <input type="text" />
                         </div>
@@ -312,7 +313,7 @@
                         <h1>KORtx-Free Layers</h1>
                     </div>
                 </div>
-                <div id="top_slider" data-kevlay="search-cars" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                <div id="top_slider" data-kevlay="search-p2" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
                     <div data-item="car" data-id="1"><div class="content"><img src="../img/page-2/pic%201.jpg"><span>Pic 1</span></div></div>
                     <div data-item="car" data-id="2"><div class="content"><img src="../img/page-2/pic%202.jpg"><span>Pic 2</span></div></div>
                     <div data-item="car" data-id="3"><div class="content"><img src="../img/page-2/pic%204.jpg"><span>Image 4</span></div></div>
@@ -408,7 +409,7 @@
                         <div class="spacer">
                         </div>
                     </div>
-                    <div class="flx-nwrp search" data-kevlay="search-cars">
+                    <div class="flx-nwrp search" data-kevlay="search-p3">
                         <div class="flx-nln input">
                             <input type="text" />
                         </div>
@@ -443,7 +444,7 @@
                                 <h1>KORtx-Free Nodes</h1>
                             </div>
                         </div>
-                        <div class="flex-grid">
+                        <div class="flex-grid" data-kevlay="search-p3">
                             <div class="colspan">
                                 <div class="actual-border">
                                     <div class="virtual-border">
@@ -496,31 +497,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cell">
+                            <div class="cell" title='sattelite'>
                                 <div class="img" style="background-color: #dddddd;background-image: url('../img/page-3/cute-aerospace-satellite-512.png');"></div>
                                 <div class="base">
                                     <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
                                 </div>
                             </div>
-                            <div class="cell">
+                            <div class="cell" title='cloud'>
                                 <div class="img" style="background-color: #aaaaaa; background-image: url('../img/page-3/cute-aerospace-cloud-512.png');"></div>
                                 <div class="base">
                                     <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
                                 </div>
                             </div>
-                            <div class="cell">
+                            <div class="cell" title='drone'>
                                 <div class="img" style="background-color: #777777; background-image: url('../img/page-3/drone-surveillance-512.png');"></div>
                                 <div class="base">
                                     <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
                                 </div>
                             </div>
-                            <div class="cell">
+                            <div class="cell" title='bomb'>
                                 <div class="img" style="background-color: #444444; background-image: url('../img/page-3/war-8-512.png');"></div>
                                 <div class="base">
                                     <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
                                 </div>
                             </div>
-                            <div class="cell">
+                            <div class="cell" title='wretched world'>
                                 <div class="img" style="background-color: #b30e08; background-image: url('../img/page-3/water-9-512.png');"></div>
                                 <div class="base">
                                     <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
@@ -566,7 +567,7 @@
 
 
                 </div>
-                <div class="site-footer" data-kevlay="search-cars">
+                <div class="site-footer">
                     <div>
                         <button class="demo run" data-knode="async">Play demo</button>
                     </div>
@@ -672,6 +673,24 @@
 
         var test2 = new KORtx.KTimeLayer('logon');
 //var abc = new KORtx.Node();
+        /*http://worldtimeapi.org/api/ip
+        {
+            "utc_offset": "+06:00",
+            "timezone": "Asia/Bishkek",
+            "day_of_week": 4,
+            "day_of_year": 277,
+            "datetime": "2024-10-03T14:14:34.346276+06:00",
+            "utc_datetime": "2024-10-03T08:14:34.346276+00:00",
+            "unixtime": 1727943274,
+            "raw_offset": 21600,
+            "week_number": 40,
+            "dst": false,
+            "abbreviation": "+06",
+            "dst_offset": 0,
+            "dst_from": null,
+            "dst_until": null,
+            "client_ip": "46.251.211.128"
+        }*/
 
 
 
@@ -679,51 +698,54 @@
 
 
 
+        // Layers and Nodes
+        // KEventLayer
+        // This step is preparation of search inputs
+        // Look for search reactions below (on others elements load), in "KEventLayer demo page" area
+        var eventTestPages = [];
+        for(var i = 1; i <= 3; i++) { // 3 "demo pages"
+            var triggerEventName = 'searchEvt'+i; // separate event for each "page"
+            eventTestPages[i] = new KORtx.KEventLayer('search-p'+i, triggerEventName, function (self_){
+                //self_.transfer = {};
+                console.log(self_.name+' event layer is loaded.');
+            });
 
-        // Layer construction
-        var evTest = new KORtx.KEventLayer('search-cars', 'searchEvt', function (self_){
-            self_.transfer = {};
-            console.log(self_.name+' event layer is loaded.');
-        });
-        // Optional request setup (.useSpecificAjaxSettings method is available for specific Ajax settings);
-        evTest.useRequestJson('https://google.com/', 'POST', ReturnResult);
+            // Optional request setup (.useSpecificAjaxSettings method is available for specific Ajax settings);
+            // evTest.useRequestJson('https://google.com/', 'GET', ReturnResult);
 
-        // Adding elements that should react to some event
-        evTest.addNodeAsync('input[type=text]',
-            function (evt, layer, elem) {/*alert('Bleep '+evt.abc+'!');*/
-                if(typeof layer.transfer['search'] === 'undefined') {
-                    layer.transfer['search'] = [];
+            // Adding input elements that should react to some event
+            eventTestPages[i].addNode('input[type=text]',
+                function (evt, layer, elem) {
+/*                    if(typeof layer.transfer['search'] === 'undefined') {
+                        layer.transfer['search'] = [];
+                    }
+                    layer.transfer['search'].push(elem.val());*/
+
+                    /*if(typeof layer.interResults === 'undefined') {
+                        layer.interResults = 0;
+                    }
+                    layer.interResults++;*/
+
+                    //elem.css('background', KORtx.Us.HtmTgs.getRandomHEXColor());
+                    elem.attr('disabled', 'disabled');
+
+                    //elem.val(layer.interResults);
+                },
+                function (evt, layer, elem) {
+                    elem.removeAttr('disabled');
                 }
-                layer.transfer['search'].push(elem.val());
+            );
 
-                if(typeof layer.interResults === 'undefined') {
-                    layer.interResults = 1;
+            // Definition of event emitter
+            eventTestPages[i].getNodesContentElements('button:not(.demo.run)')?.on('click',
+                {evtNm: triggerEventName, searchStrInput: eventTestPages[i].getNodesContentElements('input[type=text]')?.first()},
+                function (e){
+                    KORtx.emitEvent(e.data.evtNm, {searchString: e.data.searchStrInput?.val()});
                 }
-                layer.interResults++;
+            );
+        }
 
-                elem.css('background', KORtx.Us.HtmTgs.getRandomHEXColor());
-                elem.attr('disabled', 'disabled');
-            },
-            function (evt, layer, elem) {
-                elem.removeAttr('disabled');
-            }
-        );
-        console.log('---------------- // --------------');
-        // Definition of event emitter
-        evTest.getNodesContentElements('button:not(.demo.run)')?.on('click', function (){
-            KORtx.emitEvent('searchEvt', {abc: 'Yeah!'});
-        });
-//         const element = document.createElement("div"); // create a <div> element
-//
-// // add an appropriate event listener
-//         element.addEventListener("animalfound", (e) => console.log(e.detail.name));
-//
-        console.log('--------------- >> ---------------');
-        evTest.showNodes();
-        console.log(test2);
-        console.log(evTest);
-        var nodes = evTest.getNodes(['#mid_slider', '#top_slider']);
-        console.log(nodes);
+        eventTestPages[3].showNodes();
 
         //Loading Jq Tabs && slider
         Promise.allSettled([
@@ -769,17 +791,91 @@
                     } else {
                         $(e).addClass('hddn');
                     }
-                     //console.log(e);
                 });
-                //remove()Class();
             });
 
-            $('#nodes_pages #mid_slider').slick({
+            $('#nodes_pages #mid_swiper').slick({
                 autoplay: true,
                 //autoplaySpeed: 3000,
                 arrows: false,
                 dots: true,
             });
+
+
+
+            // Layers and Nodes
+            // First KEventLayer demo page, search by slide name in swiper
+            eventTestPages[1].addNode('#mid_swiper',
+                function (evt, layer, elem) {
+                    elem.children().hide();
+                    eventTestPages[1].getNodes('#mid_swiper').first()?.slick('slickUnfilter');
+                    elem.find('.slick-dots').hide();
+                    elem.append(
+                        KORtx.Us.HtmTgs.getLoaderDiv('.loader').css('min-height', '64px')
+                    );
+                },
+                function (evt, layer, elem) {
+                    setTimeout(function () { // decorative delay
+                        var slickNode = eventTestPages[1].getNodes('#mid_swiper').first();
+                        elem.find('.KORtx-loader').remove();
+                        elem.children().show();
+                        slickNode?.slick('slickFilter', function (n, slide) {
+                            var searchTxt = $('.content span', $(slide)).text()?.toLowerCase();
+                            if(searchTxt && evt.searchString){
+                                return (searchTxt.includes(evt.searchString.toLowerCase())) ? true : false;
+                            }
+                            return true;
+                        });
+
+                        var slideRemains = $('.slick-slide:not(.slick-cloned)', elem).length;
+                        if(slideRemains > 1) {
+                            elem.find('.slick-dots').show();
+                        } else {
+                            elem.find('.slick-dots').hide();
+                        }
+                    }, 1000);
+                }
+            );
+
+            // Second KEventLayer demo page, search by slide name in slider without "loading"
+            eventTestPages[2].addNode('#top_slider',
+                function (evt, layer, elem) {
+                    elem.children().hide();
+                    eventTestPages[2].getNodes('#top_slider').first()?.slick('slickUnfilter');
+                },
+                function (evt, layer, elem) {
+                    var slickNode = eventTestPages[2].getNodes('#top_slider').first();
+                    elem.children().show();
+                    slickNode?.slick('slickFilter', function (n, slide) {
+                        var searchTxt = $('.content span', $(slide)).text()?.toLowerCase();
+                        if(searchTxt && evt.searchString){
+                            return (searchTxt.includes(evt.searchString.toLowerCase())) ? true : false;
+                        }
+                        return true;
+                    });
+                    slickNode?.slick('getSlick').slickGoTo(0);
+                }
+            );
+
+            // Third KEventLayer demo page, search by cell titles in slider without "loading"
+            eventTestPages[3].addNode('.flex-grid',
+                null, // do not do anything in grid before filter (as an example)
+                function (evt, layer, elem) {
+                    var cellsToFilter = elem.children('.cell');
+                    $(cellsToFilter).hide();
+                    $(cellsToFilter).each(function (n, cell) {
+                        var searchTxt = $(cell).attr('title')?.toLowerCase();
+                        if(searchTxt && evt.searchString){
+                            if (searchTxt.includes(evt.searchString.toLowerCase())) {
+                                $(cell).show();
+                            }
+                        } else {
+                            $(cell).show();
+                        }
+                    });
+                }
+            );
+
         }());
     });
 </script>

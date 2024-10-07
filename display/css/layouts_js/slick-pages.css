@@ -64,18 +64,18 @@
 }
 
 
-#nodes_pages #mid_slider {
+#nodes_pages #mid_swiper {
     padding: 0 12vh 0 12vh;
     width: 100%;
 }
 
-#nodes_pages #mid_slider .slick-dots  {
+#nodes_pages #mid_swiper .slick-dots  {
     position: relative;
     bottom: 0;
     padding-top: 0.5vh;
 }
 
-#nodes_pages #mid_slider .slick-dots li {
+#nodes_pages #mid_swiper .slick-dots li {
     height: 2vh;
     width: 2vh;
     background-color: #bbb;
@@ -85,6 +85,6 @@
     box-sizing: border-box;
 }
 
-#nodes_pages #mid_slider .slick-dots li.slick-active {
+#nodes_pages #mid_swiper .slick-dots li.slick-active {
     background-color: lightslategrey;
 }

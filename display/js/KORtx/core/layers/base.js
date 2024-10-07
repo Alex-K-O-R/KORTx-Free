@@ -113,7 +113,7 @@ KORtx.addKORtxPart({
             return result;
         }
 
-        addNode(selector, requestFunction, responseFunction, priority){
+        addNode = function (selector, requestFunction, responseFunction, priority){
             if(typeof this.nodeMap === 'undefined'){
                 this.nodeMap = [];
             }
@@ -186,7 +186,6 @@ KORtx.addKORtxPart({
                             console.log(textStatus);
                             console.log(errorThrown );
 
-                            console.log(new self_.responseTo());
                             return null;
                         });
                 }
@@ -205,24 +204,81 @@ KORtx.addKORtxPart({
                     $.post( self_.url, resultRequest, )
                         .done(function( data ) {
                             if(typeof self_.responseTo !== 'undefined') {
-                                return new self_.responseTo(data);
+                                data = new self_.responseTo(data);
                             }
-                            return data;
+                            self_.ProcessAnswer(data);
                         })
                         .fail(function( jqXHR, textStatus, errorThrown ) {
                             console.log(jqXHR);
                             console.log(textStatus);
                             console.log(errorThrown );
-                            if(typeof self_.responseTo !== 'undefined') {
-                                return new self_.responseTo(data);
-                            }
-                            self_.Refresh_clnt(data);
+
+                            console.log(new self_.responseTo());
+
                             return null;
                         });
                 }
         }
 
-        Refresh_clnt = function(responseData){
+        addFunction = function(funcList, nodeLinkFunc, inParams, elem) {
+            var self_ = this;
+            if(nodeLinkFunc) {
+                funcList.push(
+                    (funcListResult) => {
+                        return new Promise((resolve) => {
+                            //setTimeout( /* for delayed demo*/
+                            //detail, self, el) => {
+                            nodeLinkFunc(inParams.detail, self_, $(elem)); //detail, self, el);
+                            resolve(true);
+                            //}
+                            //, 2000, evt.detail, self_, $(elem));
+                        })
+                    }
+                );
+            }
+
+            return funcList;
+        }
+
+        Refresh_srv = async function(funcList){
+            var self_ = this;
+
+            var jltf = funcList.length;
+            var i = 0;
+
+            while(i < jltf){
+                self_.funcListResult = await funcList[i](self_.funcListResult);
+                i++;
+            }
+
+            if(
+                typeof self_.method !== 'undefined' && self_.method != ''
+                && typeof self_.transfer !== 'undefined' && self_.transfer != null
+            ) {
+                self_.doRequest();
+            } else {
+                self_.ProcessAnswer();
+            }
+
+            return self_.funcListResult;
+        }
+
+        ProcessAnswer = async function(){
+
+        }
+
+        Refresh_clnt = async function(funcList){
+            var self_ = this;
+
+            var jltf = funcList.length;
+            var i = 0;
+
+            while(i < jltf){
+                self_.funcListResult = await funcList[i](self_.funcListResult);
+                i++;
+            }
+
+            return self_.funcListResult;
         }
 
         showNodes = function (borderCssRule) {
