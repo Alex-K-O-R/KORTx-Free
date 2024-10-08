@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <script type="text/javascript" src="../js/transfers/transfer.js"></script>
@@ -54,7 +54,7 @@
         </li>
         <li class="light-tab item active">
             <a href="#demo-form_tabs-7" class="light-tab-link">
-                Nodes
+                KORtx Free Layers
             </a>
         </li>
     </ul>
@@ -80,15 +80,15 @@
                         <div class="addable element">
                             <label>
                                 <input type="checkbox" value="" name="top-{i}">
-                                Открывать в новом окне <!--//TODO: translate-->
+                                Open in new window
                             </label>
-                            <input type="text" value="" name="string-{i}" placeholder="Текст ссылки">
-                            <input type="url" value="" name="url-{i}" placeholder="Описание">
-                            <span class="delete-minus button" title="Удалить поле">[-]</span>
+                            <input type="text" value="" name="string-{i}" placeholder="Link text">
+                            <input type="url" value="" name="url-{i}" placeholder="Link url">
+                            <span class="delete-minus button" title="Delete">[-]</span>
                         </div>
                     </div>
                     <div>
-                        <span class="add-plus button" title="Добавить поле">[+]</span>
+                        <span class="add-plus button" title="Add">[+]</span>
                     </div>
                 </div>
                 <button type="submit" class="action_btn">Send</button>
@@ -235,7 +235,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="login in" data-ktmlay="logon">
+                    <div class="login out" data-ktmlay="logon" title="Logout">
                         <a class="flx-rel-h100 svg" href="#">
                         </a>
                     </div>
@@ -250,7 +250,7 @@
                         <div class="pgram"><span>Imagine</span></div>
                     </div>
                     <div class="hblck cntr-hdr">
-                        <h1>Demo of KORtx-Free capabilities</h1>
+                        <h1>About KORtx Free and it's capabilities</h1>
                     </div>
                     <div id="mid_swiper" data-kevlay="search-p1" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                         <div><div class="content"><img src="../img/page-1/pic%205.jpg"><span>Image 5</span></div></div>
@@ -258,12 +258,37 @@
                         <div><div  class="content"><img src="../img/page-1/pic%207.jpeg"><span>7. Car</span></div></div>
                     </div>
                     <div class="vblck paragraphs">
-                        <p>Every page of this demo has some groups of elements that are distributed among virtual layers ("Nodes" & "Layers").</p>
-                        <p>In this demo 3 layers are used: 2 of these are synchronous and 1 &mdash; asynchronous. The key difference is in the layer's capabilities to react.</p>
-                        <p>In the footer you can see separate buttons that provokes each layer's reactions.</p>
+                        <p>KORtx Free &mdash; <b>Fr</b>ont<b>e</b>nd <b>e</b>ngine. The idea of the interaction between DOM elements and data via virtual layers was the basis for it's creation.</p>
+                        <p>KORtx Free operates on two basic elements: Layers (<i>KEventLayer</i> and <i>KTimeLayer</i>) and Nodes.</p>
+                        <p>Layers are being defined by specific data-attributes of DOM elements (<i>data-kevlay</i> and <i>data-ktmlay</i> respectively).
+                        Depending on it's type, specific Layer reacts to some event, or time interval, by self-recalculation.</p>
+                        <p>Self-recalculation process implies the following chain of actions:
+                            <ol>
+                                <li>
+                                    <nobr>Layer's Nodes preparation;</nobr>
+                                </li>
+                                <li>
+                                    <nobr>Optional server request;</nobr>
+                                </li>
+                                <li>
+                                    <nobr>Layer's Nodes reaction.</nobr>
+                                </li>
+                            </ol>
+                        </p>
+                        <p>Nodes are not represented explicitly. These has to be added to existing Layers with providing preparatory and resulting functions. Some of these function may be blocking (by defining 4th <i>resolve</i> parameter).</p>
+                        <p>This "pages" are demos of KORtx Free capabilities. In this demo 4 layers are used: 3 of which are event-based and 1 &mdash; time-based. The key difference is in the layer's source to react.</p>
                     </div>
                 </div>
-                <div class="site-footer"></div>
+                <div class="site-footer">
+                    <div>
+                        <p>
+                            If you wish to see layer's covering areas for the first event-based demo, you may click the next button
+                        </p>
+                    </div>
+                    <div>
+                        <button class="demo run button-nice"><span>Show layer</span></button>
+                    </div>
+                </div>
             </div>
             <div id="page-2" class="page_example">
                 <div class="site-header">
@@ -303,21 +328,21 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="login in">
+                    <div class="login out" data-ktmlay="logon" title="Logout">
                         <a class="flx-rel-h100 svg" href="#">
                         </a>
                     </div>
                 </div>
                 <div class="vblck">
                     <div class="cntr-hdr">
-                        <h1>KORtx-Free Layers</h1>
+                        <h1>Demo of KORtx Free event layers</h1>
                     </div>
                 </div>
-                <div id="top_slider" data-kevlay="search-p2" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                <div id="top_slider" data-kevlay="search-p2" data-ktmlay="logon" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
                     <div data-item="car" data-id="1"><div class="content"><img src="../img/page-2/pic%201.jpg"><span>Pic 1</span></div></div>
                     <div data-item="car" data-id="2"><div class="content"><img src="../img/page-2/pic%202.jpg"><span>Pic 2</span></div></div>
                     <div data-item="car" data-id="3"><div class="content"><img src="../img/page-2/pic%204.jpg"><span>Image 4</span></div></div>
-                    <div data-ktmlay="logon, user_rights"><a class="content" href="" onclick="return false;"><img src="../img/page-1/pic%20add.png"></a></div>
+                    <div class="admin"><a class="content" href="" onclick="return false;"><img src="../img/page-1/pic%20add.png"></a></div>
                 </div>
                 <div id="top_accordion">
                     <div class="flex-item-tab header item cntr-hdr">
@@ -326,16 +351,53 @@
                         <span class="hddn" data-id="3">Image 4. Two cars.</span>
                     </div>
                     <div class="flex-item-tab paragraphs">
-                        <p data-id="1">KORtx-Free Layer is the collection of DOM-elements that are being changed by different triggers, but at the same time (as a result of specific single request).
-                            For example, every 60 seconds, request about current user role is sent to some entry-point. Depending on the result, some elements should become disabled, inactive or hidden.
-                        </p>
-                        <p class="hddn" data-id="2">
-                            KORtx-Free operates time's driven layers (TimeLay) and event's driven layers (EventLay).
-                            After specific of layers had been created with constructors, collection of elements should be described either by jquery selectors or by general data-attribute within every layer.
-                        </p>
-                        <p class="hddn" data-id="3">
-                            Collection of DOM-elements is represented by two types of nodes: NodeSync and NodeAsync.
-                        </p>
+                        <div data-id="1">
+                            <p>
+                                Event demos are presented as search implementations around slick swiper, slider and table cells.
+                            </p>
+                            <p>
+                                Search inputs at the top are allow you to specify a string that is a part of image's title in slider/swiper or cell's title in the table of the third page.
+                            </p>
+                            <p>
+                                Slick. The last carousel I should ever use, actually?
+                            </p>
+                        </div>
+                        <div class="hddn" data-id="2">
+                            <p>
+                                Search in the first page uses blocking operation which simulates delay until gaining the results. In code (see test - variant.html) it differs a little in the part of Node's functions description.
+                            </p>
+                            <p>
+                                Every page of event demo has a separate KEventLayer instance associated with.
+                            </p>
+                            <p>
+                                Three different events provoke each Layer's recalculation individually. Event parameters are being stored in specific instance.eventDetails field.
+                            </p>
+                            <p>
+                                KEventLayer.js of KORtx Free has some comments about it's constructor.
+                            </p>
+                        </div>
+                        <div class="hddn" data-id="3">
+                            <p>
+                                The algorithm of event layer's implementation is pretty simple:
+                            </p>
+                            <ul>
+                                <li>
+                                    Step 1. You decide which elements in page structure will be used in some event layer and mark those with common string name in <i>data-kevlay</i> attributes.
+                                </li>
+                                <li>
+                                    Step 2. Then create new instance of KEventLayer with required parameters (explanations are given at the top of KEventLayer.js file).
+                                </li>
+                                <li>
+                                    Step 2.5. <i>Optionals.</i> If it's needed, you may use a server request with instance.useRequest(...) and instance.useSpecificAjaxSettings(...), or you may initialize layer, it's parameters and contents with instance.InitializeContents(...) functions.
+                                </li>
+                                <li>
+                                    Step 3. You define Nodes with layer's instance.addNode(...) function. Every Node is defined by selector, preparatory and reaction functions.
+                                </li>
+                                <li>
+                                    Step 4. Emit the event (perhaps, KORtx.emitEvent(...) could help). Enjoy.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="flex-item-tab header cntr-hdr"><span>Technical specs</span></div>
                     <div class="flex-item-tab paragraphs">
@@ -392,7 +454,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="site-footer"></div>
+                <div class="site-footer">
+                    <div>
+                        <p>
+                            To observe layers that are covering areas for the second and the third event-based demos, click the button
+                        </p>
+                    </div>
+                    <div>
+                        <button class="demo run button-nice"><span>Show layers</span></button>
+                    </div>
+                </div>
             </div>
             <div id="page-3" class="page_example">
                 <div class="site-header">
@@ -432,7 +503,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="login in">
+                    <div class="login out" data-ktmlay="logon" title="Logout">
                         <a class="flx-rel-h100 svg" href="#">
                         </a>
                     </div>
@@ -441,11 +512,11 @@
                     <div class="container">
                         <div class="vblck">
                             <div class="cntr-hdr">
-                                <h1>KORtx-Free Nodes</h1>
+                                <h1>Demo of KORtx Free time layer</h1>
                             </div>
                         </div>
                         <div class="flex-grid" data-kevlay="search-p3">
-                            <div class="colspan">
+                            <div class="colspan" data-ktmlay="logon">
                                 <div class="actual-border">
                                     <div class="virtual-border">
                                         <div class="aligner">
@@ -459,8 +530,8 @@
                                         <div class="desc">
                                             <div class="img" style="background-image: url('../img/page-3/battery-147-512.png');"></div>
                                             <div class="text">
-                                                <div class="edit_button"></div>
-                                                Also consider moving to another country if it is needed for some interesting work
+                                                <div class="edit_button" title='Edit'></div>
+                                                Time layer in this demo covers all three pages. Subject elements are login icons at the top and edit buttons in this block.
                                                 <a href="">More...</a>
                                             </div>
                                         </div>
@@ -469,8 +540,8 @@
                                         <div class="desc">
                                             <div class="img" style="background-image: url('../img/page-3/aerospace-aerospace-universe-galaxy-512.png');"></div>
                                             <div class="text">
-                                                <div class="edit_button"></div>
-                                                Also consider moving to another country if it is needed for some interesting work
+                                                <div class="edit_button" title='Edit'></div>
+                                                It simulates a periodical (30 s.) logon and role check with a real request to <b>www.timeapi.io</b> server.
                                                 <a href="">More...</a>
                                             </div>
                                         </div>
@@ -479,8 +550,8 @@
                                         <div class="desc">
                                             <div class="img" style="background-image: url('../img/page-3/cute-aerospace-star-512.png');"></div>
                                             <div class="text">
-                                                <div class="edit_button"></div>
-                                                Also consider moving to another country if it is needed for some interesting work
+                                                <div class="edit_button" title='Edit'></div>
+                                                (Thanks to everyone in timeapi.io team. You make the world better.)
                                                 <a href="">More...</a>
                                             </div>
                                         </div>
@@ -489,8 +560,8 @@
                                         <div class="desc">
                                             <div class="img" style="background-image: url('../img/page-3/space-earth-orbit-universe-satellite-512.png');"></div>
                                             <div class="text">
-                                                <div class="edit_button"></div>
-                                                Also consider moving to another country if it is needed for some interesting work
+                                                <div class="edit_button" title='Edit'></div>
+                                                Result is converted from time to custom ReturnResult object that represents renewed state and affects the subject elements.
                                                 <a href="">More...</a>
                                             </div>
                                         </div>
@@ -500,46 +571,53 @@
                             <div class="cell" title='sattelite'>
                                 <div class="img" style="background-color: #dddddd;background-image: url('../img/page-3/cute-aerospace-satellite-512.png');"></div>
                                 <div class="base">
-                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                    <div class="text">Time layer demo is based on newly created KTimeLayer instance.</div>
                                 </div>
                             </div>
                             <div class="cell" title='cloud'>
                                 <div class="img" style="background-color: #aaaaaa; background-image: url('../img/page-3/cute-aerospace-cloud-512.png');"></div>
                                 <div class="base">
-                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                    <div class="text">KTimeLayer differs from KEventLayer in constructor part.</div>
                                 </div>
                             </div>
                             <div class="cell" title='drone'>
                                 <div class="img" style="background-color: #777777; background-image: url('../img/page-3/drone-surveillance-512.png');"></div>
                                 <div class="base">
-                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                    <div class="text">See explanations at the top of KTimeLayer.js file.</div>
                                 </div>
                             </div>
                             <div class="cell" title='bomb'>
                                 <div class="img" style="background-color: #444444; background-image: url('../img/page-3/war-8-512.png');"></div>
                                 <div class="base">
-                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                    <div class="text">KTimeLayer also has additional self-explanatory instance.Stop() and .Resume() functions.</div>
                                 </div>
                             </div>
                             <div class="cell" title='wretched world'>
                                 <div class="img" style="background-color: #b30e08; background-image: url('../img/page-3/water-9-512.png');"></div>
                                 <div class="base">
-                                    <div class="text">Also consider moving to another country if it is needed for some interesting work</div>
+                                    <div class="text">Other than that, usage algorithm stays the same (event layers demo, <nobr>Image 4</nobr>).</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="blank">
-                        <h1>Mountain Star Zlatibor</h1>
+                        <h1>KORtx Free Layers commons</h1>
                         <div class="text">
+                            <p>
+                                Both of KTimeLayer and KEventLayer have instance.interResults field that is fully user controllable.
+                                This field serves as a storage for any inner results across layer's recalculation process. It's free to every use.
+                            </p>
+                            <p>
+                                Either KTimeLayer or KEventLayer has instance.transfer field that has a whole object's lifespan.
+                                This field is obligatory for request parameters. It is used in conjuction with instance.useRequest(...) optional method.
+                                Otherwise instance.transfer field is not needed.
+                            </p>
+                            <p>
+                                Instance.useDefaultStatesEveryTime(...) is available to reset mentioned before .interResults and .transfer fields on each layer's recalculation.
+                            </p>
                             <a href="#">
-                        <p>
-
-                                Zlatibor is a mountain of exceptional beauty whose special geographical properties have made this mountain a real gem of western Serbia.
-
-                        </p>
-                        <p>&rarr;</p>
+                                <p>&rarr;</p>
                             </a>
                         </div>
                     </div>
@@ -548,16 +626,16 @@
                         <div class="item">
                             <div class="img" style="background-image: url('../img/page-3/atom-23-512.png');"></div>
                             <div class="card">
-                                <h3>Rock climbing</h3>
-                                <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+                                <h3>Node's preparatory function</h3>
+                                <p>Whole parent layer recalculation consists of two stages: preparation and reaction (response). Node's preparatory functions start either simultaneously, or one by one (blocking), depending on 4th used <i>resolve</i> parameter in function's definition.</p>
                                 <a href="#">Learn more</a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="img" style="background-image: url('../img/page-3/galaxy-4-512.png');"></div>
                             <div class="card">
-                                <h3>Caving</h3>
-                                <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial.</p>
+                                <h3>Node's response function</h3>
+                                <p>Reaction/response functions are acting the same, except the reversal order of execution (in blocking mode) with respect to added Nodes sequence. With parent's .useRequest(...) mode, server response used as <i>data</i> parameter. Without request, parent's .interResults field is passed.</p>
                                 <a href="#">Learn more</a>
                             </div>
                         </div>
@@ -569,10 +647,12 @@
                 </div>
                 <div class="site-footer">
                     <div>
-                        <button class="demo run" data-knode="async">Play demo</button>
+                        <p>
+                            Time-based layer's covering areas may be seen if you click the button
+                        </p>
                     </div>
                     <div>
-
+                        <button class="demo run button-nice"><span>Show layer</span></button>
                     </div>
                 </div>
             </div>
@@ -667,85 +747,53 @@
         new KORtx.KShowPassword('.case-second', '.target-second > input');
 
 
-
-        //KORtx.Nodes
-        var test = new KORtx.KTimeLayer('logon');
-
-        var test2 = new KORtx.KTimeLayer('logon');
-//var abc = new KORtx.Node();
-        /*http://worldtimeapi.org/api/ip
-        {
-            "utc_offset": "+06:00",
-            "timezone": "Asia/Bishkek",
-            "day_of_week": 4,
-            "day_of_year": 277,
-            "datetime": "2024-10-03T14:14:34.346276+06:00",
-            "utc_datetime": "2024-10-03T08:14:34.346276+00:00",
-            "unixtime": 1727943274,
-            "raw_offset": 21600,
-            "week_number": 40,
-            "dst": false,
-            "abbreviation": "+06",
-            "dst_offset": 0,
-            "dst_from": null,
-            "dst_until": null,
-            "client_ip": "46.251.211.128"
-        }*/
-
-
-
-
-
-
-
-        // Layers and Nodes
-        // KEventLayer
-        // This step is preparation of search inputs
-        // Look for search reactions below (on others elements load), in "KEventLayer demo page" area
-        var eventTestPages = [];
+        // KORtx.Layers and Nodes - KEventLayer
+        // Demo shows multiple searches based on events as the examples
+        var eventTestLayers = [];
         for(var i = 1; i <= 3; i++) { // 3 "demo pages"
             var triggerEventName = 'searchEvt'+i; // separate event for each "page"
-            eventTestPages[i] = new KORtx.KEventLayer('search-p'+i, triggerEventName, function (self_){
+            // Event Layer initialization
+            eventTestLayers[i] = new KORtx.KEventLayer('search-p'+i, triggerEventName, function (self_){
                 //self_.transfer = {};
                 console.log(self_.name+' event layer is loaded.');
             });
 
-            // Optional request setup (.useSpecificAjaxSettings method is available for specific Ajax settings);
-            // evTest.useRequestJson('https://google.com/', 'GET', ReturnResult);
-
             // Adding input elements that should react to some event
-            eventTestPages[i].addNode('input[type=text]',
-                function (evt, layer, elem) {
-/*                    if(typeof layer.transfer['search'] === 'undefined') {
-                        layer.transfer['search'] = [];
-                    }
-                    layer.transfer['search'].push(elem.val());*/
-
-                    /*if(typeof layer.interResults === 'undefined') {
-                        layer.interResults = 0;
-                    }
-                    layer.interResults++;*/
-
-                    //elem.css('background', KORtx.Us.HtmTgs.getRandomHEXColor());
-                    elem.attr('disabled', 'disabled');
-
-                    //elem.val(layer.interResults);
+            // This step is preparation of search inputs.
+            // Look for search reactions below, in "KEventLayer demo page" area
+            eventTestLayers[i].addNode('input[type=text]',
+                function (data, layer, elem, resolve) {
+                    elem.attr('disabled', true);
+                    resolve(true);
                 },
-                function (evt, layer, elem) {
+                function (data, layer, elem) {
                     elem.removeAttr('disabled');
                 }
             );
 
             // Definition of event emitter
-            eventTestPages[i].getNodesContentElements('button:not(.demo.run)')?.on('click',
-                {evtNm: triggerEventName, searchStrInput: eventTestPages[i].getNodesContentElements('input[type=text]')?.first()},
+            eventTestLayers[i].getNodesContentInnerElements('button:not(.demo.run)')?.on('click',
+                {evtNm: triggerEventName, searchStrInput: eventTestLayers[i].getNodesContentInnerElements('input[type=text]')?.first()},
                 function (e){
                     KORtx.emitEvent(e.data.evtNm, {searchString: e.data.searchStrInput?.val()});
                 }
             );
         }
 
-        eventTestPages[3].showNodes();
+        // KORtx.Layers and Nodes - KEventLayer
+        // Demo shows dynamic changes of elements across pages via request (logon simulation)
+        // .useSpecificAjaxSettings method is available for specific Ajax settings
+        var timeTestLayer = new KORtx.KTimeLayer('logon', 30000, function (layer) {return true;}).useRequest(
+            'https://www.timeapi.io/api/time/current/zone',
+            KORtx.Layer.availableRequestTypes.GET,
+            ReturnResult, // this could be any object's constructor to process and place data has been returned from server
+            KORtx.Layer.availableRequestEncodeTypes.url
+        ).InitializeContents(function (layer) {
+            console.log(layer.name+' time layer is loaded.');
+            layer.transfer = {timeZone: 'Etc/GMT'}; // KORtx Layer's place for request's data
+            layer.interResults = {}; // Always available storage for intermediate results of functions (in both Time and Event Layers)
+        });
+
 
         //Loading Jq Tabs && slider
         Promise.allSettled([
@@ -777,6 +825,11 @@
                     });
             } );
 
+            $('#nodes_pages #top_slider').on('init', function (event, slick){
+                slick.$slides.each(function (index, e) {
+                    $(e).data('slcksckfx', e); // fix of this unusable slick carousel
+                });
+            });
             $('#nodes_pages #top_slider').slick({
                 //autoplay: true,
                 //autoplaySpeed: 3000,
@@ -802,27 +855,26 @@
             });
 
 
-
             // Layers and Nodes
             // First KEventLayer demo page, search by slide name in swiper
-            eventTestPages[1].addNode('#mid_swiper',
-                function (evt, layer, elem) {
+            eventTestLayers[1].addNode('#mid_swiper',
+                function (data, layer, elem) {
                     elem.children().hide();
-                    eventTestPages[1].getNodes('#mid_swiper').first()?.slick('slickUnfilter');
+                    eventTestLayers[1].getDirectNodeElement('#mid_swiper').first()?.slick('slickUnfilter');
                     elem.find('.slick-dots').hide();
                     elem.append(
                         KORtx.Us.HtmTgs.getLoaderDiv('.loader').css('min-height', '64px')
                     );
                 },
-                function (evt, layer, elem) {
+                function (data, layer, elem, resolve) {
                     setTimeout(function () { // decorative delay
-                        var slickNode = eventTestPages[1].getNodes('#mid_swiper').first();
+                        var slickNode = eventTestLayers[1].getDirectNodeElement('#mid_swiper').first();
                         elem.find('.KORtx-loader').remove();
                         elem.children().show();
                         slickNode?.slick('slickFilter', function (n, slide) {
                             var searchTxt = $('.content span', $(slide)).text()?.toLowerCase();
-                            if(searchTxt && evt.searchString){
-                                return (searchTxt.includes(evt.searchString.toLowerCase())) ? true : false;
+                            if(searchTxt && layer.eventDetails.searchString){
+                                return (searchTxt.includes(layer.eventDetails.searchString.toLowerCase())) ? true : false;
                             }
                             return true;
                         });
@@ -833,23 +885,24 @@
                         } else {
                             elem.find('.slick-dots').hide();
                         }
+                        resolve(true);
                     }, 1000);
                 }
             );
 
             // Second KEventLayer demo page, search by slide name in slider without "loading"
-            eventTestPages[2].addNode('#top_slider',
-                function (evt, layer, elem) {
+            eventTestLayers[2].addNode('#top_slider',
+                function (data, layer, elem) {
                     elem.children().hide();
-                    eventTestPages[2].getNodes('#top_slider').first()?.slick('slickUnfilter');
+                    eventTestLayers[2].getDirectNodeElement('#top_slider').first()?.slick('slickUnfilter');
                 },
-                function (evt, layer, elem) {
-                    var slickNode = eventTestPages[2].getNodes('#top_slider').first();
+                function (data, layer, elem) {
+                    var slickNode = eventTestLayers[2].getDirectNodeElement('#top_slider').first();
                     elem.children().show();
                     slickNode?.slick('slickFilter', function (n, slide) {
                         var searchTxt = $('.content span', $(slide)).text()?.toLowerCase();
-                        if(searchTxt && evt.searchString){
-                            return (searchTxt.includes(evt.searchString.toLowerCase())) ? true : false;
+                        if(searchTxt && layer.eventDetails.searchString){
+                            return (searchTxt.includes(layer.eventDetails.searchString.toLowerCase())) ? true : false;
                         }
                         return true;
                     });
@@ -858,15 +911,15 @@
             );
 
             // Third KEventLayer demo page, search by cell titles in slider without "loading"
-            eventTestPages[3].addNode('.flex-grid',
+            eventTestLayers[3].addNode('.flex-grid',
                 null, // do not do anything in grid before filter (as an example)
-                function (evt, layer, elem) {
+                function (data, layer, elem) {
                     var cellsToFilter = elem.children('.cell');
                     $(cellsToFilter).hide();
                     $(cellsToFilter).each(function (n, cell) {
                         var searchTxt = $(cell).attr('title')?.toLowerCase();
-                        if(searchTxt && evt.searchString){
-                            if (searchTxt.includes(evt.searchString.toLowerCase())) {
+                        if(searchTxt && layer.eventDetails.searchString){
+                            if (searchTxt.includes(layer.eventDetails.searchString.toLowerCase())) {
                                 $(cell).show();
                             }
                         } else {
@@ -876,6 +929,60 @@
                 }
             );
 
+            // Demo of KTimeLayer is being spanned across all the "pages" simultaneously
+            timeTestLayer.
+            addNode('.login',
+                null,
+                function (data, layer, elem) {
+                    if(data?.is_authorized) {
+                        elem.removeClass('in').addClass('out');
+                        elem.attr('title', 'Logout');
+                    } else {
+                        elem.removeClass('out').addClass('in');
+                        elem.attr('title', 'Login');
+                    }
+                }
+            ).
+            addNode('.admin',
+                null,
+                function (data, layer, elem) {
+                    var slSlider = layer.getDirectNodeElement('#top_slider');
+                    if(data?.is_admin) {
+                        slSlider.slick('slickAdd', layer.interResults.sliderAdminBlock).slick('refresh');
+                    } else {
+                        slSlider.slick("getSlick").$slides.each(function (index, slide) {
+                            if(slide.classList.contains('admin')){
+                                // https://github.com/kenwheeler/slick/issues/1497
+                                var originalSlide = $(slide).data('slcksckfx');
+                                layer.interResults.sliderAdminBlock = originalSlide;
+                                var slideIndex = $('.slick-slide:not(.slick-cloned)', slSlider).index(originalSlide);
+                                slSlider.slick('slickRemove', slideIndex).slick('refresh');
+                            }
+                        });
+                    }
+                }
+            ).
+            addNode('.item .edit_button',
+                null,
+                function (data, layer, elem) {
+                    if(data?.is_admin) {
+                        elem.show();
+                    } else {
+                        elem.hide();
+                    }
+                }
+            );
+
+            $('#page-1 .site-footer .demo.run').click(function (){
+                eventTestLayers[1].showNodes();
+            });
+            $('#page-2 .site-footer .demo.run').click(function (){
+                eventTestLayers[2].showNodes();
+                eventTestLayers[3].showNodes();
+            });
+            $('#page-3 .site-footer .demo.run').click(function (){
+                timeTestLayer.showNodes('4px dashed '+KORtx.Us.HtmTgs.getRandomHEXColor());
+            });
         }());
     });
 </script>

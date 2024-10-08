@@ -3,19 +3,13 @@
  * that are being returned from server
  */
 class ReturnResult {
-    //logon layer
-    username;
-    //user_rights layer
+    is_authorized;
     is_admin;
-
-    //async demo
-    show_black_cars;
 
     constructor(DATA) {
         if(typeof DATA !== 'undefined') {
-            this.username = DATA['username'];
-            this.is_admin = DATA['is_admin'];
-            this.show_black_cars = DATA['show_black_cars'];
+            this.is_authorized = (DATA['seconds'] > 30);
+            this.is_admin = this.is_authorized && ((DATA['seconds'] % 2) == 1);
         }
     }
 }

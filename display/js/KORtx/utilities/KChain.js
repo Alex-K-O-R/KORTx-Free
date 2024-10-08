@@ -58,7 +58,7 @@ KORtx.addKORtxPart({
                     this.timeouts.splice([i]);
                 }
             }
-            //StartIS = function(){alert(123);}
+
             Start = function () {
                 if (this.started) return;
 

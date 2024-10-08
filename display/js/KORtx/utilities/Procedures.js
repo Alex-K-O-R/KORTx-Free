@@ -49,7 +49,7 @@ KORtx.addKORtxPart({
                         if(['ínput', 'textarea'].indexOf($(v).prop('tagName').toLowerCase())){
                             if(!$(v).is(':checkbox')){
                                 if($(v).is(':file')) {
-                                    console.log('WARNING! KFF doesn\'t mess with input-FILE-type!');
+                                    console.log('WARNING! KFormFiller doesn\'t mess with input-FILE-type!');
                                 } else {
                                     $(v).prop('value', (jsonFormData[$(v).prop('name')]!=='')?JSON.parse(jsonFormData[$(v).prop('name')]):'');
                                 }

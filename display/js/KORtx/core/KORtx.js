@@ -42,9 +42,7 @@ class KORtx {
     onStart = function (startFunc, ...args) {
         LoadJSLibrary([
             '../js/KORtx/core/jquery/jquery-3.6.1.min.js',
-            '../js/KORtx/core/nodes/base.js',
-            '../js/KORtx/core/nodes/KNodeAsync.js',
-            '../js/KORtx/core/nodes/KNodeSync.js',
+            '../js/KORtx/core/nodes/KNodeLink.js',
             '../js/KORtx/core/layers/base.js',
             '../js/KORtx/core/layers/KTimeLayer.js',
             '../js/KORtx/core/layers/KEventLayer.js',

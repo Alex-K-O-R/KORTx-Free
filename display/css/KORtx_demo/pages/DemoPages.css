@@ -46,11 +46,81 @@
     flex-grow: 0;
     min-height: 12%;
 }
-#nodes_pages .site-footer > div {
+#nodes_pages .site-footer > div:first-child {
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 70%;
     align-self: center;
     text-align: center;
+    padding: 0px 3%;
+    font-size: 74%;
+    color: seashell;
+    letter-spacing: 0.75px;
+    line-height: 125%;
+}
+#nodes_pages .site-footer > div:nth-child(2) {
+    flex-grow: 1;
+    flex-basis: 30%;
+    align-self: center;
+    text-align: left;
+}
+
+#nodes_pages .site-footer .button-nice {
+    background-color: transparent;
+    border: 1px solid #266DB6;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: "Avenir Next LT W01 Bold",sans-serif;
+    font-size: 80%;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 8px 10px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    z-index: 10;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#nodes_pages .site-footer .button-nice:hover,
+.button-nice:active {
+    outline: 0;
+}
+
+#nodes_pages .site-footer .button-nice:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#nodes_pages .site-footer .button-nice:before {
+    background-color: #D5EDF6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: 5;
+}
+
+#nodes_pages .site-footer .button-nice:hover:before {
+    background-color: #6DCFF6;
+}
+
+#nodes_pages .site-footer .button-nice > span {
+    z-index: 15;
+    position: absolute;
+    width: max-content;
+}
+
+#nodes_pages .site-footer .button-nice:hover > span {
+    font-weight: bold;
+    color: snow;
+    transition: color 150ms ease-in;
 }
 
 #nodes_pages .site-header > div {
@@ -139,6 +209,7 @@
 #nodes_pages .site-header .login {
     flex-basis: 5.5rem;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 .page_example .site-header .login .svg {
@@ -538,6 +609,11 @@
     background-image: url('../../../img/page-3/pexels-simonmigaj-1237528.jpg');
 }
 
+#page-3 .container.second p {
+    padding: 0.5em 1em 1em 1em;
+    font-size: 95%;
+}
+
 #page-3 .container.second .item {
     display: flex;
     max-width: 320px;
@@ -585,12 +661,13 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     vertical-align: middle;
 }
 #page-3 .site-content .blank .text p {
     display: inline-flex;
     color: white;
+    padding: 0 1em;
 }
 #page-3 .site-content .blank .text a {
     text-decoration: none;
@@ -614,6 +691,16 @@
 #page-3 .card > a {
     margin-bottom: 2em;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

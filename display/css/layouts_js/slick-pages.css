@@ -40,6 +40,7 @@
     position: absolute;
     bottom: 0;
     font-size: 80%;
+    background-color: black;
     color: greenyellow;
     display: block;
     left: 5px;
