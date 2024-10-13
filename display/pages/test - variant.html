@@ -338,7 +338,7 @@
                         <h1>Demo of KORtx Free event layers</h1>
                     </div>
                 </div>
-                <div id="top_slider" data-kevlay="search-p2" data-ktmlay="logon" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                <div id="top_slider" data-kevlay="search-p2" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
                     <div data-item="car" data-id="1"><div class="content"><img src="../img/page-2/pic%201.jpg"><span>Pic 1</span></div></div>
                     <div data-item="car" data-id="2"><div class="content"><img src="../img/page-2/pic%202.jpg"><span>Pic 2</span></div></div>
                     <div data-item="car" data-id="3"><div class="content"><img src="../img/page-2/pic%204.jpg"><span>Image 4</span></div></div>
@@ -940,25 +940,6 @@
                     } else {
                         elem.removeClass('out').addClass('in');
                         elem.attr('title', 'Login');
-                    }
-                }
-            ).
-            addNode('.admin',
-                null,
-                function (data, layer, elem) {
-                    var slSlider = layer.getDirectNodeElement('#top_slider');
-                    if(data?.is_admin) {
-                        slSlider.slick('slickAdd', layer.interResults.sliderAdminBlock).slick('refresh');
-                    } else {
-                        slSlider.slick("getSlick").$slides.each(function (index, slide) {
-                            if(slide.classList.contains('admin')){
-                                // https://github.com/kenwheeler/slick/issues/1497
-                                var originalSlide = $(slide).data('slcksckfx');
-                                layer.interResults.sliderAdminBlock = originalSlide;
-                                var slideIndex = $('.slick-slide:not(.slick-cloned)', slSlider).index(originalSlide);
-                                slSlider.slick('slickRemove', slideIndex).slick('refresh');
-                            }
-                        });
                     }
                 }
             ).
